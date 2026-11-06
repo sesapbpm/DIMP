@@ -1,0 +1,195 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a021c"/>
+      <stop offset="25%" stop-color="#140833"/>
+      <stop offset="55%" stop-color="#0c2356"/>
+      <stop offset="85%" stop-color="#07335e"/>
+      <stop offset="100%" stop-color="#021d3a"/>
+    </linearGradient>
+
+    <!-- Color Gradients for Lines -->
+    <linearGradient id="purpleToBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="blueToCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Radial Glow Filters -->
+    <filter id="glow-bright" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur1"/>
+      <feGaussianBlur stdDeviation="20" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glow-soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <radialGradient id="purpleGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d8b4fe" stop-opacity="1"/>
+      <stop offset="30%" stop-color="#a855f7" stop-opacity="0.8"/>
+      <stop offset="70%" stop-color="#7c3aed" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#581c87" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="cyanGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="25%" stop-color="#67e8f9" stop-opacity="0.9"/>
+      <stop offset="65%" stop-color="#06b6d4" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0891b2" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="blueGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="30%" stop-color="#60a5fa" stop-opacity="0.8"/>
+      <stop offset="70%" stop-color="#2563eb" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background Rect -->
+  <rect width="1920" height="800" fill="url(#bgGrad)"/>
+
+  <!-- Background Ambient Glow Orbs (Bokeh) -->
+  <circle cx="180" cy="620" r="140" fill="url(#purpleGlow)" opacity="0.35"/>
+  <circle cx="420" cy="180" r="160" fill="url(#purpleGlow)" opacity="0.25"/>
+  <circle cx="950" cy="400" r="220" fill="url(#blueGlow)" opacity="0.3"/>
+  <circle cx="1550" cy="280" r="240" fill="url(#cyanGlow)" opacity="0.35"/>
+  <circle cx="1780" cy="550" r="180" fill="url(#cyanGlow)" opacity="0.25"/>
+
+  <!-- Background Network Layer (Faint, out of focus) -->
+  <g stroke="#6366f1" stroke-width="1" opacity="0.25">
+    <line x1="80" y1="200" x2="280" y2="120"/>
+    <line x1="280" y1="120" x2="450" y2="350"/>
+    <line x1="450" y1="350" x2="220" y2="580"/>
+    <line x1="220" y1="580" x2="80" y2="200"/>
+    <line x1="450" y1="350" x2="750" y2="250"/>
+    <line x1="750" y1="250" x2="980" y2="150"/>
+    <line x1="980" y1="150" x2="1250" y2="300"/>
+    <line x1="1250" y1="300" x2="1100" y2="580"/>
+    <line x1="1100" y1="580" x2="750" y2="480"/>
+    <line x1="750" y1="480" x2="450" y2="350"/>
+    <line x1="1250" y1="300" x2="1500" y2="180"/>
+    <line x1="1500" y1="180" x2="1750" y2="320"/>
+    <line x1="1750" y1="320" x2="1600" y2="600"/>
+    <line x1="1600" y1="600" x2="1250" y2="500"/>
+    <line x1="1750" y1="320" x2="1900" y2="200"/>
+  </g>
+
+  <!-- Main Connecting Lines (Middleground & Foreground) -->
+  <g stroke-linecap="round">
+    <!-- Left Section (Purple - Indigo) -->
+    <line x1="420" y1="110" x2="520" y2="370" stroke="#c084fc" stroke-width="2.2" opacity="0.85"/>
+    <line x1="420" y1="110" x2="920" y2="120" stroke="url(#purpleToBlue)" stroke-width="2" opacity="0.75"/>
+    <line x1="420" y1="110" x2="180" y2="220" stroke="#a855f7" stroke-width="1.8" opacity="0.6"/>
+    <line x1="180" y1="220" x2="520" y2="370" stroke="#9333ea" stroke-width="1.8" opacity="0.7"/>
+    <line x1="520" y1="370" x2="850" y2="390" stroke="url(#purpleToBlue)" stroke-width="2.2" opacity="0.85"/>
+    <line x1="520" y1="370" x2="840" y2="500" stroke="url(#purpleToBlue)" stroke-width="2" opacity="0.8"/>
+    <line x1="520" y1="370" x2="350" y2="650" stroke="#7e22ce" stroke-width="1.6" opacity="0.65"/>
+    <line x1="350" y1="650" x2="150" y2="720" stroke="#a855f7" stroke-width="1.4" opacity="0.5"/>
+    <line x1="180" y1="220" x2="60" y2="450" stroke="#7c3aed" stroke-width="1.4" opacity="0.45"/>
+    <line x1="60" y1="450" x2="350" y2="650" stroke="#6b21a8" stroke-width="1.4" opacity="0.5"/>
+
+    <!-- Center Section (Blue - Teal Transition) -->
+    <line x1="920" y1="120" x2="920" y2="260" stroke="#3b82f6" stroke-width="2" opacity="0.75"/>
+    <line x1="920" y1="120" x2="1240" y2="115" stroke="url(#blueToCyan)" stroke-width="1.8" opacity="0.7"/>
+    <line x1="920" y1="260" x2="850" y2="390" stroke="#60a5fa" stroke-width="2" opacity="0.8"/>
+    <line x1="850" y1="390" x2="840" y2="500" stroke="#3b82f6" stroke-width="2.2" opacity="0.85"/>
+    <line x1="840" y1="500" x2="830" y2="670" stroke="#2563eb" stroke-width="1.8" opacity="0.75"/>
+    <line x1="920" y1="120" x2="1120" y2="380" stroke="url(#blueToCyan)" stroke-width="2" opacity="0.8"/>
+    <line x1="850" y1="390" x2="1120" y2="380" stroke="#38bdf8" stroke-width="2.2" opacity="0.85"/>
+    <line x1="840" y1="500" x2="1110" y2="520" stroke="#0ea5e9" stroke-width="2.2" opacity="0.85"/>
+    <line x1="1120" y1="380" x2="1110" y2="520" stroke="#38bdf8" stroke-width="2.5" opacity="0.9"/>
+    <line x1="830" y1="670" x2="1110" y2="520" stroke="#0284c7" stroke-width="1.8" opacity="0.75"/>
+    <line x1="1110" y1="520" x2="1380" y2="610" stroke="#06b6d4" stroke-width="1.8" opacity="0.8"/>
+
+    <!-- Right Section (Cyan - Turquoise Radiance) -->
+    <line x1="1240" y1="115" x2="1120" y2="380" stroke="#22d3ee" stroke-width="2" opacity="0.8"/>
+    <line x1="1240" y1="115" x2="1520" y2="130" stroke="#06b6d4" stroke-width="1.8" opacity="0.75"/>
+    <line x1="1120" y1="380" x2="1500" y2="360" stroke="#38bdf8" stroke-width="2.2" opacity="0.85"/>
+    <line x1="1110" y1="520" x2="1500" y2="360" stroke="#06b6d4" stroke-width="2" opacity="0.8"/>
+    <line x1="1520" y1="130" x2="1500" y2="360" stroke="#22d3ee" stroke-width="2" opacity="0.8"/>
+    <line x1="1500" y1="360" x2="1700" y2="520" stroke="#00e5ff" stroke-width="2.5" opacity="0.9"/>
+    <line x1="1380" y1="610" x2="1700" y2="520" stroke="#06b6d4" stroke-width="2.2" opacity="0.85"/>
+    <line x1="1500" y1="360" x2="1820" y2="380" stroke="#67e8f9" stroke-width="2.8" opacity="0.95"/>
+    <line x1="1700" y1="520" x2="1820" y2="380" stroke="#22d3ee" stroke-width="2.4" opacity="0.9"/>
+    <line x1="1520" y1="130" x2="1820" y2="380" stroke="#38bdf8" stroke-width="2" opacity="0.75"/>
+    <line x1="1820" y1="380" x2="1940" y2="240" stroke="#00e5ff" stroke-width="2" opacity="0.8"/>
+    <line x1="1820" y1="380" x2="1960" y2="480" stroke="#38bdf8" stroke-width="2" opacity="0.7"/>
+    <line x1="1700" y1="520" x2="1880" y2="690" stroke="#0891b2" stroke-width="1.8" opacity="0.75"/>
+    <line x1="1820" y1="380" x2="1880" y2="690" stroke="#06b6d4" stroke-width="1.8" opacity="0.75"/>
+  </g>
+
+  <!-- Glowing Geometric Nodes (Dots) -->
+  <g>
+    <!-- Left Nodes -->
+    <circle cx="420" cy="110" r="14" fill="#e9d5ff" filter="url(#glow-bright)"/>
+    <circle cx="420" cy="110" r="7" fill="#ffffff"/>
+    
+    <circle cx="180" cy="220" r="9" fill="#c084fc" filter="url(#glow-soft)"/>
+    <circle cx="180" cy="220" r="5" fill="#ffffff"/>
+
+    <circle cx="520" cy="370" r="18" fill="#f3e8ff" filter="url(#glow-bright)"/>
+    <circle cx="520" cy="370" r="9" fill="#ffffff"/>
+
+    <circle cx="350" cy="650" r="11" fill="#c084fc" filter="url(#glow-soft)"/>
+    <circle cx="350" cy="650" r="6" fill="#ffffff"/>
+
+    <!-- Center Nodes -->
+    <circle cx="920" cy="120" r="15" fill="#bfdbfe" filter="url(#glow-bright)"/>
+    <circle cx="920" cy="120" r="8" fill="#ffffff"/>
+
+    <circle cx="850" cy="390" r="12" fill="#93c5fd" filter="url(#glow-soft)"/>
+    <circle cx="850" cy="390" r="6" fill="#ffffff"/>
+
+    <circle cx="840" cy="500" r="13" fill="#bfdbfe" filter="url(#glow-bright)"/>
+    <circle cx="840" cy="500" r="7" fill="#ffffff"/>
+
+    <circle cx="830" cy="670" r="10" fill="#60a5fa" filter="url(#glow-soft)"/>
+    <circle cx="830" cy="670" r="5" fill="#ffffff"/>
+
+    <circle cx="1120" cy="380" r="19" fill="#e0f2fe" filter="url(#glow-bright)"/>
+    <circle cx="1120" cy="380" r="10" fill="#22d3ee"/>
+    <circle cx="1120" cy="380" r="5" fill="#ffffff"/>
+
+    <circle cx="1110" cy="520" r="17" fill="#e0f2fe" filter="url(#glow-bright)"/>
+    <circle cx="1110" cy="520" r="8" fill="#ffffff"/>
+
+    <!-- Right Nodes -->
+    <circle cx="1240" cy="115" r="9" fill="#67e8f9" filter="url(#glow-soft)"/>
+    <circle cx="1240" cy="115" r="5" fill="#ffffff"/>
+
+    <circle cx="1520" cy="130" r="14" fill="#a5f3fc" filter="url(#glow-soft)"/>
+    <circle cx="1520" cy="130" r="7" fill="#22d3ee"/>
+
+    <circle cx="1380" cy="610" r="10" fill="#67e8f9" filter="url(#glow-soft)"/>
+    <circle cx="1380" cy="610" r="5" fill="#ffffff"/>
+
+    <circle cx="1500" cy="360" r="12" fill="#cffafe" filter="url(#glow-soft)"/>
+    <circle cx="1500" cy="360" r="6" fill="#ffffff"/>
+
+    <circle cx="1700" cy="520" r="14" fill="#a5f3fc" filter="url(#glow-soft)"/>
+    <circle cx="1700" cy="520" r="7" fill="#00e5ff"/>
+
+    <!-- Focal Star Node on the Right -->
+    <circle cx="1820" cy="380" r="28" fill="#a5f3fc" filter="url(#glow-bright)"/>
+    <circle cx="1820" cy="380" r="14" fill="#ffffff"/>
+    <circle cx="1820" cy="380" r="7" fill="#ecfeff"/>
+
+    <circle cx="1880" cy="690" r="15" fill="#06b6d4" filter="url(#glow-soft)"/>
+    <circle cx="1880" cy="690" r="7" fill="#0891b2"/>
+  </g>
+</svg>
