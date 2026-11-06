@@ -37,10 +37,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Header background on scroll
     const header = document.querySelector('.header');
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 100) {
-            header.style.background = 'rgba(74, 144, 226, 0.98)';
+        if (window.scrollY > 80) {
+            header.style.background = 'rgba(10, 22, 50, 0.96)';
+            header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.3)';
         } else {
-            header.style.background = 'rgba(74, 144, 226, 0.95)';
+            header.style.background = 'rgba(10, 22, 50, 0.85)';
+            header.style.boxShadow = '0 2px 15px rgba(0, 0, 0, 0.2)';
         }
     });
     
