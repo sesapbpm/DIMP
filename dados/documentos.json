@@ -1,0 +1,35 @@
+[
+  {
+    "id": "DOC-001",
+    "titulo": "Relatório Parcial — Etapa 1: Nível Estratégico",
+    "categoria": "Relatórios Técnicos",
+    "periodo": "Ano 1 (2023)",
+    "versao": "1.0",
+    "arquivo": "reports/Relatório Parcial Projeto DIMP SESAP.pdf",
+    "descricao": "Diagnóstico organizacional aprofundado, mapeamento preliminar das áreas estratégicas da SESAP e diretrizes gerais do projeto.",
+    "paginas": "65 páginas",
+    "destaque": true
+  },
+  {
+    "id": "DOC-002",
+    "titulo": "Resumo Executivo — Relatório DIMP SESAP Etapa 1",
+    "categoria": "Resumos Executivos",
+    "periodo": "Ano 1 (2023)",
+    "versao": "1.0",
+    "arquivo": "reports/Resumo Executivo Relatório DIMP SESAP.pdf",
+    "descricao": "Síntese executiva condensada dos principais achados, oportunidades de modernização e roteiro de implementação para a alta gestão da Secretaria.",
+    "paginas": "12 páginas",
+    "destaque": true
+  },
+  {
+    "id": "DOC-003",
+    "titulo": "Relatório Parcial — Etapa 2: Nível Tático",
+    "categoria": "Relatórios Técnicos",
+    "periodo": "Ano 2 (2024)",
+    "versao": "2.0",
+    "arquivo": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf",
+    "descricao": "Documento completo com 100 páginas de entregas técnicas: conferência de folhas de ponto (p. 14-36), automação de inventário com RPA/BI (p. 52-56), gestão digital de contratos e sistemas (p. 60-66), engenharia de manutenção hospitalar e minutas padrão (p. 67-84, 98-100) e compras públicas.",
+    "paginas": "100 páginas",
+    "destaque": true
+  }
+]

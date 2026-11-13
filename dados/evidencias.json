@@ -1,0 +1,102 @@
+[
+  {
+    "questao": "Questão 1",
+    "requisito": "Processos mapeados e formalmente documentados",
+    "evidencia": "Repositório centralizado contendo fluxogramas modelados em notação BPMN 2.0, com fichas de processo, manuais e POPs das 5 frentes de trabalho.",
+    "documento": "Repositório de Processos DIMP SESAP (Códigos COM-001 a SIS-005)",
+    "frente": "Todas as 5 frentes",
+    "unidade": "Central de Compras, Almoxarifado, Engenharia Clínica, CORSA, CTI",
+    "situacao": "Evidência disponível",
+    "data_atualizacao": "2024-10"
+  },
+  {
+    "questao": "Questão 2",
+    "requisito": "Metodologia institucional formalizada",
+    "evidencia": "Metodologia de Gestão por Processos consolidada baseada em BPMN 2.0, ciclo PDCA, mapeamento AS IS e redesenho TO BE com padrão Heii/UFRN.",
+    "documento": "Manual de Gestão por Processos / Relatórios Parciais Etapa 1 e 2",
+    "frente": "Metodologia",
+    "unidade": "Coordenação Geral DIMP / SESAP / UFRN",
+    "situacao": "Evidência aprovada",
+    "data_atualizacao": "2024-09"
+  },
+  {
+    "questao": "Questão 3",
+    "requisito": "Documentação padronizada",
+    "evidencia": "Adoção de modelos padronizados institucionais para manuais de processos, POPs, fichas de indicadores e matrizes de riscos via template do Canva.",
+    "documento": "Template Institucional Canva (DAHaJs7gD6k) e fichas técnicas",
+    "frente": "Metodologia",
+    "unidade": "Equipe de Gestão Documental DIMP",
+    "situacao": "Evidência disponível",
+    "data_atualizacao": "2024-08"
+  },
+  {
+    "questao": "Questão 4",
+    "requisito": "Definição de responsáveis, entradas, saídas, prazos e controles",
+    "evidencia": "Fichas completas de caracterização para cada processo, delimitando gestores institucionais, fornecedores, entradas, saídas, prazos médios e pontos de controle.",
+    "documento": "Fichas individuais de processos cadastradas no portal (Aba 1)",
+    "frente": "Todas as frentes",
+    "unidade": "Unidades Gestoras da SESAP",
+    "situacao": "Evidência disponível",
+    "data_atualizacao": "2024-10"
+  },
+  {
+    "questao": "Questão 5",
+    "requisito": "Responsável institucional pela gestão por processos",
+    "evidencia": "Estrutura de governança e comitê técnico do projeto DIMP, com proposta de estruturação da Unidade de Gestão de Contratos e Escritório de Processos.",
+    "documento": "Termo de Parceria UFRN/SESAP e Proposta da UGC (Relatório 2 p. 65)",
+    "frente": "Sistemas / Governança",
+    "unidade": "Gabinete SESAP / UFRN",
+    "situacao": "Em elaboração / Aguardando ato normativo",
+    "data_atualizacao": "2024-10"
+  },
+  {
+    "questao": "Questão 6",
+    "requisito": "Monitoramento, revisão e aprimoramento",
+    "evidencia": "Histórico formal de revisões em cada processo documentado, registros de melhorias implantadas e transição contínua do AS IS para o TO BE.",
+    "documento": "Aba 7 (Histórico de Revisões) de cada processo e Relatório Etapa 2",
+    "frente": "Todas as frentes",
+    "unidade": "Equipe Técnica DIMP / SESAP",
+    "situacao": "Evidência disponível",
+    "data_atualizacao": "2024-09"
+  },
+  {
+    "questao": "Questão 7",
+    "requisito": "Indicadores de desempenho",
+    "evidencia": "Matrizes de indicadores por processo, painel de BI da Central de Compras em Streamlit e indicadores táticos estruturados para as 5 frentes.",
+    "documento": "Painel Streamlit e Matrizes de Indicadores (Aba 5)",
+    "frente": "Todas as frentes",
+    "unidade": "Central de Compras / Almoxarifado / CTI",
+    "situacao": "Evidência disponível",
+    "data_atualizacao": "2024-10"
+  },
+  {
+    "questao": "Questão 8",
+    "requisito": "Riscos e controles internos",
+    "evidencia": "Matrizes de riscos e controles associadas aos processos críticos, classificadas em operacionais, integridade, financeiros, contratuais e tecnológicos.",
+    "documento": "Seção 6 do Portal e Abas 6 dos Processos Críticos",
+    "frente": "Todas as frentes",
+    "unidade": "Controle Interno SESAP / DIMP",
+    "situacao": "Evidência disponível",
+    "data_atualizacao": "2024-10"
+  },
+  {
+    "questao": "Questão 9",
+    "requisito": "Integração com auditoria, integridade e gestão de riscos",
+    "evidencia": "Ações integradas com a Controladoria Geral do Estado, auditoria de contratos terceirizados e instrumentos preventivos de integridade em compras.",
+    "documento": "Relatórios de Fiscalização Contratual e Plano de Ação",
+    "frente": "Custos / Compras",
+    "unidade": "CORSA / Central de Compras / Assessoria Jurídica",
+    "situacao": "Em elaboração",
+    "data_atualizacao": "2024-08"
+  },
+  {
+    "questao": "Questão 10",
+    "requisito": "Disponibilização dos processos para consulta",
+    "evidencia": "Portal institucional DIMP com navegação moderna, responsiva, filtros multifacetados, visualização em cards e tabelas, e visualizador com 7 abas de detalhamento.",
+    "documento": "Portal Institucional DIMP SESAP/RN (GitHub Pages)",
+    "frente": "Geral",
+    "unidade": "Sociedade, Servidores e Gestores da SESAP",
+    "situacao": "Evidência aprovada",
+    "data_atualizacao": "2024-11"
+  }
+]

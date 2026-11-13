@@ -1,0 +1,92 @@
+[
+  {
+    "id": "POP-001",
+    "titulo": "POP — Autuação e Instrução de Processo de Dispensa de Licitação",
+    "frente": "Compras",
+    "tipo": "Procedimento Operacional Padrão",
+    "descricao": "Roteiro detalhado para montagem dos autos de dispensa com contrato no SEI, checklist de admissibilidade e instrução para envio à PGE.",
+    "link": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf#page=48",
+    "download": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf"
+  },
+  {
+    "id": "POP-002",
+    "titulo": "POP — Conferência de Folhas de Ponto e Apuração de Glosas de Terceirizados",
+    "frente": "Terceirizados",
+    "tipo": "Procedimento Operacional Padrão",
+    "descricao": "Metodologia baseada em VSM para conferência ágil de frequência, checagem de certidões trabalhistas e planilha automatizada de retenção.",
+    "link": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf#page=14",
+    "download": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf"
+  },
+  {
+    "id": "POP-003",
+    "titulo": "POP — Recebimento e Inspeção Técnica de Materiais de Consumo",
+    "frente": "Aquisições",
+    "tipo": "Procedimento Operacional Padrão",
+    "descricao": "Procedimento para inspeção física, quarentena, conferência de lotes e cadastro de entrada de medicamentos e insumos no SISLOG.",
+    "link": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf#page=37",
+    "download": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf"
+  },
+  {
+    "id": "POP-004",
+    "titulo": "Manual de Operação do Robô RPA e Painel Power BI de Inventário",
+    "frente": "Aquisições",
+    "tipo": "Manual Operacional",
+    "descricao": "Guia de uso e manutenção do script de extração automática de dados dos hospitais para apuração de estoque crítico em tempo real.",
+    "link": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf#page=52",
+    "download": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf"
+  },
+  {
+    "id": "POP-005",
+    "titulo": "Manual de Gestão e Fiscalização de Contratos de Manutenção Hospitalar",
+    "frente": "Manutenção",
+    "tipo": "Manual de Gestão",
+    "descricao": "Manual completo para fiscais técnicos e administrativos com critérios de medição de ordens de serviço, cálculo de MTTR e aplicação de glosas.",
+    "link": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf#page=67",
+    "download": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf"
+  },
+  {
+    "id": "POP-006",
+    "titulo": "Manual de Obtenção de Acesso e Operação no Contratos.gov.br",
+    "frente": "Sistemas",
+    "tipo": "Manual de Sistema",
+    "descricao": "Passo a passo com telas do sistema federal para cadastramento de fiscais, autenticação Gov.br e lançamento de atestos eletrônicos.",
+    "link": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf#page=63",
+    "download": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf"
+  },
+  {
+    "id": "POP-007",
+    "titulo": "POP — Rito de Liquidação Digital de Pagamentos de Contratos Formalizados",
+    "frente": "Sistemas",
+    "tipo": "Procedimento Operacional Padrão",
+    "descricao": "Fluxo integrado entre SEI, SIPAC e Contratos.gov.br para validação de notas fiscais com redução do ciclo de liquidação.",
+    "link": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf#page=60",
+    "download": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf"
+  },
+  {
+    "id": "POP-008",
+    "titulo": "Caderno de Encargos e Minuta Padrão de Manutenção Predial e Hospitalar",
+    "frente": "Manutenção",
+    "tipo": "Caderno Técnico",
+    "descricao": "Minuta contratual padronizada do Projeto DIMP com cláusulas de garantia, SLA e matriz de penalidades técnicas para editais da SESAP.",
+    "link": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf#page=98",
+    "download": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf"
+  },
+  {
+    "id": "POP-009",
+    "titulo": "Manual de Aquisição e Rastreabilidade de OPME",
+    "frente": "Aquisições",
+    "tipo": "Manual Operacional",
+    "descricao": "Diretrizes para regulação e fiscalização de materiais implantáveis especiais, auditoria de prontuários cirúrgicos e controle de consignados.",
+    "link": "reports/Relatório Parcial Projeto DIMP SESAP.pdf#page=32",
+    "download": "reports/Relatório Parcial Projeto DIMP SESAP.pdf"
+  },
+  {
+    "id": "POP-010",
+    "titulo": "POP — Coleta, Fracionamento e Distribuição Segura de Hemocomponentes",
+    "frente": "Históricos e Transversais",
+    "tipo": "Procedimento Operacional Padrão",
+    "descricao": "Protocolo técnico de segurança transfusional e fluxo de informação no SBSWeb do HEMONORTE.",
+    "link": "reports/Relatório Parcial Projeto DIMP SESAP.pdf#page=60",
+    "download": "reports/Relatório Parcial Projeto DIMP SESAP.pdf"
+  }
+]

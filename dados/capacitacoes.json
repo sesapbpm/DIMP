@@ -1,0 +1,52 @@
+[
+  {
+    "id": "CAP-001",
+    "titulo": "Fundamentos de Gestão por Processos e Notação BPMN 2.0",
+    "categoria": "BPM e Modelagem",
+    "carga_horaria": "20 horas",
+    "publico": "Servidores, Gestores e Bolsistas",
+    "descricao": "Conceitos de arquitetura de processos, identificação de gargalos, ciclo AS IS e TO BE, eventos, atividades e regras da notação BPMN 2.0.",
+    "material": "Apostila e Apresentações DIMP",
+    "link": "#"
+  },
+  {
+    "id": "CAP-002",
+    "titulo": "Capacitação no Sistema Contratos.gov.br e Atuação de Fiscais",
+    "categoria": "Sistemas Institucionais",
+    "carga_horaria": "16 horas",
+    "publico": "Fiscais e Gestores de Contratos da SESAP",
+    "descricao": "Guia prático para registro de atestos, inclusão de notas fiscais, controle de garantias e monitoramento de saldo empenhado na plataforma federal.",
+    "material": "Manual do Fiscal e Vídeos Tutoriais",
+    "link": "#"
+  },
+  {
+    "id": "CAP-003",
+    "titulo": "Metodologia do Ciclo PDCA e Melhoria Contínua na Saúde",
+    "categoria": "Melhoria Contínua",
+    "carga_horaria": "12 horas",
+    "publico": "Equipes Técnicas e Administrativas",
+    "descricao": "Aplicação do método Plan-Do-Check-Act para solução estruturada de problemas, padronização de rotinas e acompanhamento de planos de ação.",
+    "material": "Guia Metodológico PDCA",
+    "link": "#"
+  },
+  {
+    "id": "CAP-004",
+    "titulo": "Gestão e Fiscalização de Contratos de Terceirização e Folhas de Ponto",
+    "categoria": "Contratos e Finanças",
+    "carga_horaria": "16 horas",
+    "publico": "Fiscais Administrativos e Chefias de Setor",
+    "descricao": "Instrução técnica sobre direitos trabalhistas, encargos sociais, conferência de escalas e critérios para aplicação legal de glosas.",
+    "material": "Cartilha do Fiscal de Terceirizados",
+    "link": "#"
+  },
+  {
+    "id": "CAP-005",
+    "titulo": "Boas Práticas de Almoxarifado, Rastreabilidade e Gestão de Estoques",
+    "categoria": "Suprimentos e Logística",
+    "carga_horaria": "16 horas",
+    "publico": "Almoxarifes e Farmacêuticos",
+    "descricao": "Controle físico de insumos hospitalares, quarentena, acondicionamento de medicamentos termolábeis e uso do painel de Business Intelligence.",
+    "material": "Manual de Procedimentos de Almoxarifado",
+    "link": "#"
+  }
+]

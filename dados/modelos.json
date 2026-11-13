@@ -1,0 +1,65 @@
+[
+  {
+    "id": "MOD-001",
+    "titulo": "Modelo de Documentação de Processos (Layout Institucional)",
+    "descricao": "Template oficial diagramado com a identidade visual da SESAP/UFRN para estruturação de processos, papéis, insumos e saídas.",
+    "tipo": "Template Visual",
+    "icone": "fa-palette",
+    "link": "https://www.canva.com/design/DAHaJs7gD6k/Xh4xGpdHKU0pdWvf2s-EuA/edit",
+    "download": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf#page=1"
+  },
+  {
+    "id": "MOD-002",
+    "titulo": "Modelo Padrão de Manual de Processo",
+    "descricao": "Estrutura descritiva para documentação detalhada de processos complexos, papéis dos agentes públicos e pontos de decisão.",
+    "tipo": "Manual Padrão",
+    "icone": "fa-book-open",
+    "link": "https://www.canva.com/design/DAHaJs7gD6k/Xh4xGpdHKU0pdWvf2s-EuA/edit",
+    "download": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf#page=67"
+  },
+  {
+    "id": "MOD-003",
+    "titulo": "Modelo de Procedimento Operacional Padrão (POP)",
+    "descricao": "Roteiro padronizado com instruções operacionais sequenciais, checklists de execução e parâmetros de conformidade.",
+    "tipo": "Procedimento Padrão",
+    "icone": "fa-list-check",
+    "link": "https://www.canva.com/design/DAHaJs7gD6k/Xh4xGpdHKU0pdWvf2s-EuA/edit",
+    "download": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf#page=37"
+  },
+  {
+    "id": "MOD-004",
+    "titulo": "Modelo de Ficha de Caracterização de Processo",
+    "descricao": "Instrumento sintético para definição de objetivos, donos do processo, fornecedores, entradas, saídas e clientes internos.",
+    "tipo": "Ficha Técnica",
+    "icone": "fa-id-card",
+    "link": "https://www.canva.com/design/DAHaJs7gD6k/Xh4xGpdHKU0pdWvf2s-EuA/edit",
+    "download": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf#page=48"
+  },
+  {
+    "id": "MOD-005",
+    "titulo": "Modelo de Matriz de Indicadores de Desempenho",
+    "descricao": "Planilha paramétrica para definição de métricas de processo, metas, fórmulas de cálculo, periodicidade e fontes de dados.",
+    "tipo": "Matriz de Indicadores",
+    "icone": "fa-chart-line",
+    "link": "https://www.canva.com/design/DAHaJs7gD6k/Xh4xGpdHKU0pdWvf2s-EuA/edit",
+    "download": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf#page=14"
+  },
+  {
+    "id": "MOD-006",
+    "titulo": "Modelo de Matriz de Riscos e Controles Internos",
+    "descricao": "Matriz institucional para identificação de eventos de risco, análise de causas, impactos e ações de controle preventivo.",
+    "tipo": "Matriz de Riscos",
+    "icone": "fa-shield-halved",
+    "link": "https://www.canva.com/design/DAHaJs7gD6k/Xh4xGpdHKU0pdWvf2s-EuA/edit",
+    "download": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf#page=70"
+  },
+  {
+    "id": "MOD-007",
+    "titulo": "Modelo de Minuta Contratual Padrão para Manutenção",
+    "descricao": "Minuta jurídica e caderno de encargos padronizado para contratação e fiscalização com regras de SLA e glosas automáticas.",
+    "tipo": "Minuta Jurídica",
+    "icone": "fa-file-contract",
+    "link": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf#page=98",
+    "download": "reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf#page=98"
+  }
+]

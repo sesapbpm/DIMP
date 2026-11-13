@@ -1,0 +1,127 @@
+{
+  "total_mapeados": 31,
+  "total_as_is": 31,
+  "total_to_be": 13,
+  "processos_validados": 23,
+  "processos_implantados": 3,
+  "total_frentes": 5,
+  "documentos_disponiveis": 6,
+  "painel_streamlit_url": "https://dashprojetosesap.streamlit.app/?embed=true#3-central-de-compras",
+  "frentes_indicadores": {
+    "compras": [
+      {
+        "nome": "Tempo Médio dos Processos Licitatórios",
+        "meta": "<= 60 dias úteis",
+        "apurado": "74 dias",
+        "status": "Em monitoramento",
+        "fonte": "Central de Compras / SEI"
+      },
+      {
+        "nome": "Cumprimento do Plano de Contratações Anual (PCA)",
+        "meta": ">= 85%",
+        "apurado": "68%",
+        "status": "Em evolução",
+        "fonte": "Central de Compras / PNCP"
+      },
+      {
+        "nome": "Índice de Demandas Consolidadas da Central de Compras",
+        "meta": ">= 90%",
+        "apurado": "82%",
+        "status": "Ativo",
+        "fonte": "Painel Streamlit Central de Compras"
+      }
+    ],
+    "aquisicoes": [
+      {
+        "nome": "Cobertura Média de Estoque no Almoxarifado Central",
+        "meta": "30 a 45 dias",
+        "apurado": "38 dias",
+        "status": "Normal",
+        "fonte": "SISLOG / BI Almoxarifado"
+      },
+      {
+        "nome": "Tempo de Consolidação Automatizada de Inventário",
+        "meta": "<= 2 horas",
+        "apurado": "1.5 horas",
+        "status": "Alcançado",
+        "fonte": "Logs RPA Python (Relatório 2 p. 52)"
+      },
+      {
+        "nome": "Taxa de Ruptura de Itens Essenciais Hospitalares",
+        "meta": "<= 3%",
+        "apurado": "4.2%",
+        "status": "Em monitoramento",
+        "fonte": "SISLOG"
+      }
+    ],
+    "manutencao": [
+      {
+        "nome": "Disponibilidade Global do Parque Biomédico",
+        "meta": ">= 95%",
+        "apurado": "92.4%",
+        "status": "Normal",
+        "fonte": "Engenharia Clínica / OS"
+      },
+      {
+        "nome": "Tempo Médio para Reparo (MTTR)",
+        "meta": "<= 18 horas",
+        "apurado": "26.4 horas",
+        "status": "Em melhoria",
+        "fonte": "Ordens de Serviço de Manutenção"
+      },
+      {
+        "nome": "Cumprimento do Cronograma de Manutenções Preventivas",
+        "meta": ">= 95%",
+        "apurado": "82%",
+        "status": "Em melhoria",
+        "fonte": "Relatórios de Fiscalização"
+      }
+    ],
+    "custos": [
+      {
+        "nome": "Tempo de Tramitação e Liquidação de Terceirizados",
+        "meta": "<= 20 dias",
+        "apurado": "27 dias",
+        "status": "Em redução",
+        "fonte": "CORSA / SEI"
+      },
+      {
+        "nome": "Lead Time de Conferência de Folhas de Ponto (VSM)",
+        "meta": "<= 12 dias",
+        "apurado": "15 dias (era 38)",
+        "status": "Alcançado TO BE",
+        "fonte": "VSM Lean (Relatório 2 p. 14)"
+      },
+      {
+        "nome": "Volume Anual de Glosas Identificadas e Retidas",
+        "meta": "Auditoria 100%",
+        "apurado": "R$ 480 mil / ano",
+        "status": "Monitoramento",
+        "fonte": "Planilhas de Retenção CORSA"
+      }
+    ],
+    "sistemas": [
+      {
+        "nome": "Índice de Adesão ao Sistema Contratos.gov.br",
+        "meta": ">= 90%",
+        "apurado": "78%",
+        "status": "Em expansão",
+        "fonte": "CTI / MGI (Relatório 2 p. 61)"
+      },
+      {
+        "nome": "Tempo de Liberação de Acesso para Fiscais no Sistema",
+        "meta": "<= 48 horas",
+        "apurado": "22 horas",
+        "status": "Alcançado",
+        "fonte": "CTI / SEI (Relatório 2 p. 63)"
+      },
+      {
+        "nome": "Processos Automatizados com RPA / BI em Produção",
+        "meta": ">= 5 rotinas",
+        "apurado": "3 rotinas ativas",
+        "status": "Em implantação",
+        "fonte": "CTI / Laboratório DIMP"
+      }
+    ]
+  }
+}
