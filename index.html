@@ -4,834 +4,1109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto BPM SESAP/RN - Modernização da Gestão Pública em Saúde</title>
+    <title>Projeto BPM SESAP/RN — Gestão por Processos e Modernização em Saúde</title>
+    <meta name="description"
+        content="Portal Institucional do Projeto BPM SESAP/RN - Desenvolvimento e Implantação de Ferramentas BPM para Modernização dos Processos de Gestão da Secretaria de Estado da Saúde Pública do RN.">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
 </head>
 
 <body>
+    <!-- Header & Navbar Fixa -->
+    <header class="site-header" id="header">
+        <div class="nav-container">
+            <a href="#inicio" class="brand-logo" aria-label="Página Inicial do Projeto BPM SESAP/RN">
+                <img src="images/logo-projeto.png" alt="Logo Projeto BPM SESAP/RN" class="nav-logo">
+                <div class="brand-text">
+                    <span class="brand-title">Projeto BPM SESAP/RN</span>
+                    <span class="brand-subtitle">Gestão por Processos</span>
+                </div>
+            </a>
 
-    <header class="header">
-        <nav class="navbar">
-            <div class="nav-brand">
-                <img src="images/logo-projeto.png" alt="Logo do Projeto" class="logo">
-                <span class="brand-text">Projeto BPM</span>
-            </div>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menu de Navegação" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
 
-            <ul class="nav-menu">
-                <li><a href="#inicio" class="nav-link">Início</a></li>
-                <li><a href="#quem-somos" class="nav-link">Quem Somos</a></li>
-                <li><a href="#proposito" class="nav-link">Propósito</a></li>
-                <li><a href="#fases" class="nav-link">Fases</a></li>
-                <li><a href="#experiencias" class="nav-link">Experiências</a></li>
-                <li><a href="#bpm" class="nav-link">BPM</a></li>
-                <li><a href="#indicadores" class="nav-link">Indicadores</a></li>
-                <li><a href="#processos" class="nav-link">Processos</a></li>
-                <li><a href="#relatorios" class="nav-link">Relatórios</a></li>
-            </ul>
-
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
+            <nav class="main-nav" id="main-nav" aria-label="Navegação Principal">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#inicio" class="nav-link active">Início</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre o Projeto</a></li>
+                    <li class="nav-item"><a href="#repositorio" class="nav-link highlight-link"><i class="fa-solid fa-folder-tree"></i> Repositório</a></li>
+                    <li class="nav-item"><a href="#gestao-processos" class="nav-link">Gestão por Processos</a></li>
+                    <li class="nav-item"><a href="#indicadores" class="nav-link">Indicadores</a></li>
+                    <li class="nav-item"><a href="#relatorios" class="nav-link">Relatórios</a></li>
+                    <li class="nav-item"><a href="#projetos-realizados" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#equipe" class="nav-link">Nossa Equipe</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <!-- SECTION 01: INÍCIO (HERO COM IMAGEM ANIMADA ORIGINAL E COMPONENTES CENTRALIZADOS) -->
+    <section class="hero-section" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <!-- Grid de 2 colunas: Texto à esquerda e Logo Animado Original à direita -->
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Projeto BPM SESAP/RN</h1>
+                    <h2 class="hero-subtitle">Desenvolvimento e Implantação de Ferramentas BPM para Modernização dos
+                        Processos de Gestão da SESAP/RN</h2>
 
-        <section id="inicio" class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1 class="hero-title">Projeto BPM SESAP/RN</h1>
-                        <h2 class="hero-subtitle" style="text-align: justify; text-justify: inter-word;">Desenvolvimento
-                            e Implantação de Ferramentas BPM (Business Process
-                            Management) para modernização dos processos de gestão nos níveis estratégico, tático e
-                            operacional da Secretaria de Saúde do Estado do Rio Grande do Norte-SESAP</h2>
-                        <p class="hero-description" style="text-align: justify; text-justify: inter-word;">
-                            Transformação dos processos de gestão da Secretaria de Saúde do RN, em parceria com a UFRN,
-                            nas esferas estratégica, tática e operacional.
-                            O projeto também capacita estudantes de Engenharia de Produção com a aplicação prática de
-                            metodologias BPM,
-                            desenvolvendo habilidades em mapeamento de processos, diagnóstico organizacional e proposta
-                            de melhorias.
-                        </p>
-                        <div class="hero-buttons">
-                            <a href="#quem-somos" class="btn btn-secondary">Saiba Mais</a>
-                            <a href="#processos" class="btn btn-primary">Ver Processos</a>
-                        </div>
+                    <div class="hero-desc-box">
+                        <p>O Projeto DIMP SESAP/RN é uma iniciativa desenvolvida em parceria entre a Universidade
+                            Federal do Rio Grande do Norte e a Secretaria de Estado da Saúde Pública, com o objetivo de
+                            modernizar os processos de gestão nos níveis estratégico, tático e operacional, por meio da
+                            aplicação de metodologias BPM, ferramentas de melhoria contínua, indicadores e soluções
+                            tecnológicas.</p>
                     </div>
-                    <div class="hero-image">
-                        <img src="images/logo-projeto.png" alt="Logo do Projeto BPM" class="hero-logo">
+
+                    <!-- 4 Botões de Acesso Rápido Padronizados -->
+                    <div class="hero-actions">
+                        <a href="#repositorio" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Consultar Processos</a>
+                        <a href="#indicadores" class="btn btn-secondary"><i class="fa-solid fa-chart-line"></i> Acessar Indicadores</a>
+                        <a href="#gestao-processos" class="btn btn-outline"><i class="fa-solid fa-book-bookmark"></i> Consultar Manuais e POPs</a>
+                        <a href="#relatorios" class="btn btn-outline"><i class="fa-solid fa-file-pdf"></i> Visualizar Relatórios</a>
+                    </div>
+                </div>
+
+                <!-- Imagem Original do Projeto Restaurada com Efeito de Movimento (Animação Float) -->
+                <div class="hero-image">
+                    <img src="images/logo-projeto.png" alt="Logo do Projeto BPM SESAP/RN" class="hero-logo">
+                </div>
+            </div>
+
+            <!-- Painel de Indicadores Gerais do Projeto (Componentes Centrais Objetivos) -->
+            <div class="kpi-panel">
+                <div class="kpi-card">
+                    <div class="kpi-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                    <div class="kpi-info">
+                        <span class="kpi-value" id="kpi-total-processos">31</span>
+                        <span class="kpi-label">Processos Mapeados</span>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon"><i class="fa-solid fa-layer-group"></i></div>
+                    <div class="kpi-info">
+                        <span class="kpi-value" id="kpi-total-frentes">6</span>
+                        <span class="kpi-label">Frentes de Trabalho</span>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon"><i class="fa-solid fa-book-bookmark"></i></div>
+                    <div class="kpi-info">
+                        <span class="kpi-value" id="kpi-pops-disponiveis">10</span>
+                        <span class="kpi-label">POPs e Manuais</span>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon"><i class="fa-solid fa-file-shield"></i></div>
+                    <div class="kpi-info">
+                        <span class="kpi-value" id="kpi-relatorios-disponiveis">3</span>
+                        <span class="kpi-label">Relatórios Oficiais</span>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section id="quem-somos" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Quem Somos Nós?</h2>
-                    <div class="section-divider"></div>
+            <!-- Cards de Acesso Rápido às Cinco Frentes (Centralizados) -->
+            <div class="fronts-preview">
+                <h3 class="fronts-preview-title"><i class="fa-solid fa-sitemap"></i>Frentes de Trabalho
+                    Institucionais</h3>
+                <div class="fronts-grid">
+                    <a href="#repositorio" class="front-card" data-front="Compras">
+                        <div class="front-card-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <h4>Compras</h4>
+                        <p>Licitações, compras diretas, planejamento das contratações e organização da Central de
+                            Compras da SESAP.</p>
+                        <span class="front-card-link">Acessar processos <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                    <a href="#repositorio" class="front-card" data-front="Aquisições">
+                        <div class="front-card-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+                        <h4>Aquisições</h4>
+                        <p>Suprimentos, materiais de consumo, gêneros alimentícios, OPME e inventário automatizado via
+                            RPA e BI.</p>
+                        <span class="front-card-link">Acessar processos <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                    <a href="#repositorio" class="front-card" data-front="Manutenção">
+                        <div class="front-card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <h4>Manutenção</h4>
+                        <p>Engenharia clínica, manutenção preventiva e corretiva, calibração e fiscalização contratual
+                            hospitalar.</p>
+                        <span class="front-card-link">Acessar processos <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                    <a href="#repositorio" class="front-card" data-front="Custos">
+                        <div class="front-card-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                        <h4>Custos</h4>
+                        <p>Custos hospitalares, apuração de gastos por leito/dia, descentralização orçamentária e gestão financeira.</p>
+                        <span class="front-card-link">Acessar processos <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                    <a href="#repositorio" class="front-card" data-front="Terceirizados">
+                        <div class="front-card-icon"><i class="fa-solid fa-user-clock"></i></div>
+                        <h4>Terceirizados</h4>
+                        <p>Gestão de mão de obra terceirizada, conferência de folhas de ponto (VSM), apuração de glosas e fiscalização de postos.</p>
+                        <span class="front-card-link">Acessar processos <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                    <a href="#repositorio" class="front-card" data-front="Sistemas">
+                        <div class="front-card-icon"><i class="fa-solid fa-network-wired"></i></div>
+                        <h4>Sistemas</h4>
+                        <p>Sistemas institucionais (SEI, SIPAC, Contratos.gov.br), gestão digital de contratos e
+                            governança de dados.</p>
+                        <span class="front-card-link">Acessar processos <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
                 </div>
-                <div class="content-grid">
-                    <div class="content-text">
-                        <p>
-                            Em continuidade às iniciativas de modernização da gestão pública em saúde,
-                            temos o prazer de apresentar nosso mais recente desafio: o projeto
-                            "Desenvolvimento e Implantação de Ferramentas BPM (Business Process Management) para
-                            modernização dos processos de gestão nos níveis estratégico, tático e operacional da
-                            Secretaria de Saúde do Estado do Rio Grande do Norte-SESAP", em parceria com a Universidade
-                            Federal
-                            do Rio Grande do Norte (UFRN).
-                        </p>
-                        <div class="highlight-box">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p>
-                                A iniciativa é desenvolvida no âmbito do grupo de pesquisa HEII –
-                                Healthcare, Engineering and Industrial Innovation Research Group,
-                                vinculado ao Departamento de Engenharia de Produção da UFRN.
-                            </p>
-                        </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 02: SOBRE O PROJETO -->
+    <section class="section section-light" id="sobre">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Apresentação Institucional</span>
+                <h2 class="section-title">Sobre o Projeto</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Aliança estratégica entre a Universidade Federal do Rio Grande do Norte
+                    (UFRN) e a Secretaria de Estado da Saúde Pública (SESAP/RN).</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <h3>Propósito e Objetivo Geral</h3>
+                    <p>Modernizar a gestão por processos da Secretaria de Estado da Saúde Pública do RN (SESAP),
+                        implementando metodologias de Business Process Management (BPM) e ferramentas de melhoria
+                        contínua para elevar a eficiência, transparência e agilidade no atendimento à população.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>Capacitação e Formação Prática</h3>
+                    <p>Capacitar servidores públicos estaduais e estudantes de Engenharia de Produção da UFRN em
+                        mapeamento, diagnóstico organizacional, redesenho de processos e implantação de controles
+                        internos eficientes.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Inovação Tecnológica e Digital</h3>
+                    <p>Integrar os processos modelados às plataformas digitais do governo (SEI, SIPAC,
+                        Contratos.gov.br), aplicando automação de rotinas (RPA) e painéis analíticos de Business
+                        Intelligence (BI) para apoio à tomada de decisão.</p>
+                </div>
+            </div>
+
+            <!-- Fases do Projeto / Linha do Tempo -->
+            <div class="timeline-container">
+                <h3 class="timeline-title"><i class="fa-solid fa-route"></i> Fases de Execução do Projeto</h3>
+                <div class="timeline-grid">
+                    <div class="timeline-card status-concluido">
+                        <div class="timeline-badge"><i class="fa-solid fa-check"></i> Finalizado</div>
+                        <div class="timeline-year">Ano 1</div>
+                        <h4>Nível Estratégico</h4>
+                        <p>Diagnóstico institucional aprofundado, identificação de macroprocessos críticos, alinhamento
+                            com a alta gestão da SESAP e estruturação da governança do projeto.</p>
+                        <ul class="timeline-features">
+                            <li><i class="fa-solid fa-check-double"></i> Mapeamento AS IS dos macroprocessos
+                                prioritários</li>
+                            <li><i class="fa-solid fa-check-double"></i> Entrega do Relatório Parcial Etapa 1 e Resumo
+                                Executivo</li>
+                            <li><i class="fa-solid fa-check-double"></i> Definição do escopo das frentes de atuação</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-card status-andamento active-phase">
+                        <div class="timeline-badge pulse"><i class="fa-solid fa-spinner fa-spin"></i> Em Andamento</div>
+                        <div class="timeline-year">Ano 2</div>
+                        <h4>Nível Tático</h4>
+                        <p>Detalhamento de rotinas operacionais, elaboração de propostas de melhoria (TO BE), minutas
+                            contratuais de manutenção, VSM de terceirizados e piloto de automação RPA/BI.</p>
+                        <ul class="timeline-features">
+                            <li><i class="fa-solid fa-spinner"></i> Implantação do redesenho de conferência de folhas de
+                                ponto</li>
+                            <li><i class="fa-solid fa-spinner"></i> Automação de inventário com RPA e painel Power BI
+                            </li>
+                            <li><i class="fa-solid fa-spinner"></i> Minuta padrão e modelo de fiscalização de contratos
+                            </li>
+                            <li><i class="fa-solid fa-check-double"></i> Entrega do Relatório Parcial Etapa 2 (100
+                                páginas)</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-card status-planejado">
+                        <div class="timeline-badge"><i class="fa-solid fa-calendar-days"></i> Planejado</div>
+                        <div class="timeline-year">Ano 3</div>
+                        <h4>Nível Operacional</h4>
+                        <p>Consolidação institucional das melhorias, disseminação dos POPs nas unidades hospitalares
+                            descentralizadas, integração contínua de sistemas e governança processual contínua.</p>
+                        <ul class="timeline-features">
+                            <li><i class="fa-regular fa-clock"></i> Expansão dos painéis analíticos para todos os
+                                hospitais</li>
+                            <li><i class="fa-regular fa-clock"></i> Institucionalização definitiva da Unidade de Gestão
+                                de Contratos</li>
+                            <li><i class="fa-regular fa-clock"></i> Manual definitivo de governança processual SESAP/RN
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="equipe" class="section section-alt">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Nossa Equipe</h2>
-                    <div class="section-divider"></div>
-                    <p class="section-subtitle">Conheça os membros dedicados que fazem parte do Projeto BPM SESAP/RN.
-                        <strong>Para acessar o perfil profissional de cada um, clique na foto. </strong>
-                    </p>
+
+            <!-- Ciclo BPM Adotado -->
+            <div class="bpm-cycle-container">
+                <h3 class="bpm-cycle-title"><i class="fa-solid fa-arrows-spin"></i> Ciclo de Gestão por Processos
+                    Adotado</h3>
+                <div class="bpm-steps-grid">
+                    <div class="bpm-step">
+                        <span class="step-num">01</span>
+                        <h4>Identificação &amp; Alinhamento</h4>
+                        <p>Mapeamento das demandas prioritárias da SESAP e definição de escopo e limites do processo.
+                        </p>
+                    </div>
+                    <div class="bpm-step">
+                        <span class="step-num">02</span>
+                        <h4>Mapeamento AS IS</h4>
+                        <p>Levantamento in loco com os executores para modelar o fluxo atual e diagnosticar gargalos.
+                        </p>
+                    </div>
+                    <div class="bpm-step">
+                        <span class="step-num">03</span>
+                        <h4>Análise &amp; Redesenho TO BE</h4>
+                        <p>Eliminação de desperdícios, padronização de formulários e proposta de fluxo otimizado.</p>
+                    </div>
+                    <div class="bpm-step">
+                        <span class="step-num">04</span>
+                        <h4>Validação &amp; Implantação</h4>
+                        <p>Aprovação institucional com gestores, capacitação dos servidores e homologação em sistemas.
+                        </p>
+                    </div>
+                    <div class="bpm-step">
+                        <span class="step-num">05</span>
+                        <h4>Monitoramento Contínuo</h4>
+                        <p>Acompanhamento por meio de indicadores de desempenho, melhoria contínua e revisões
+                            periódicas.</p>
+                    </div>
                 </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 03: REPOSITÓRIO DE PROCESSOS -->
+    <section class="section section-alt" id="repositorio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Ambiente Centralizado de Consulta</span>
+                <h2 class="section-title">Repositório de Processos</h2>
+                <div class="section-divider"></div>
+                <div class="repo-intro-box">
+                    <p>O Repositório de Processos do Projeto BPM SESAP/RN constitui um ambiente centralizado de
+                        armazenamento, organização e consulta dos processos mapeados, disponibilizando fluxogramas,
+                        manuais, procedimentos operacionais padrão e documentos relacionados à gestão processual. A
+                        documentação tem como finalidade promover a padronização das atividades, a disseminação do
+                        conhecimento, a melhoria contínua, a transparência e o acompanhamento dos processos
+                        institucionais.</p>
+                </div>
+            </div>
+
+            <!-- Abas Rápidas de Frentes -->
+            <div class="repo-front-tabs" id="repo-front-tabs">
+                <button class="front-tab-btn active" data-front="Todas"><i class="fa-solid fa-list-check"></i> Todas as
+                    Frentes</button>
+                <button class="front-tab-btn" data-front="Compras"><i class="fa-solid fa-cart-shopping"></i>
+                    Compras</button>
+                <button class="front-tab-btn" data-front="Aquisições"><i class="fa-solid fa-boxes-stacked"></i>
+                    Aquisições</button>
+                <button class="front-tab-btn" data-front="Manutenção"><i class="fa-solid fa-screwdriver-wrench"></i>
+                    Manutenção</button>
+                <button class="front-tab-btn" data-front="Custos"><i class="fa-solid fa-chart-pie"></i> Custos</button>
+                <button class="front-tab-btn" data-front="Terceirizados"><i class="fa-solid fa-user-clock"></i>
+                    Terceirizados</button>
+                <button class="front-tab-btn" data-front="Sistemas"><i class="fa-solid fa-network-wired"></i>
+                    Sistemas</button>
+                <button class="front-tab-btn" data-front="Históricos e Transversais"><i
+                        class="fa-solid fa-box-archive"></i> Históricos</button>
+            </div>
+
+            <!-- Barra de Filtros e Busca -->
+            <div class="filter-toolbar">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="repo-search"
+                        placeholder="Pesquisar por código, nome, setor ou palavra-chave..."
+                        aria-label="Pesquisar processos">
+                    <button class="clear-search-btn" id="clear-search" title="Limpar busca">&times;</button>
+                </div>
+
+                <div class="filter-controls">
+                    <div class="filter-group">
+                        <label for="filter-unidade">Unidade Administrativa:</label>
+                        <select id="filter-unidade" class="filter-select">
+                            <option value="Todas">Todas as Unidades</option>
+                            <option value="Central de Compras">Central de Compras / Coordenadoria de Compras</option>
+                            <option value="Almoxarifado Central">Almoxarifado Central / Operações</option>
+                            <option value="Engenharia Clínica">Engenharia Clínica / Manutenção</option>
+                            <option value="CORSA">CORSA / Gestão de Contratos / Financeiro</option>
+                            <option value="CTI">CTI / Unidade de Gestão de Contratos</option>
+                            <option value="HEMONORTE">HEMONORTE / Hemorrede</option>
+                            <option value="Regulação">Central de Regulação em Saúde</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="filter-nivel">Nível de Gestão:</label>
+                        <select id="filter-nivel" class="filter-select">
+                            <option value="Todos">Todos os Níveis</option>
+                            <option value="Estratégico">Estratégico</option>
+                            <option value="Tático">Tático</option>
+                            <option value="Operacional">Operacional</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="filter-fluxo">Tipo de Fluxo:</label>
+                        <select id="filter-fluxo" class="filter-select">
+                            <option value="Todos">Todos os Fluxos</option>
+                            <option value="com_as_is">Com AS IS Disponível</option>
+                            <option value="com_to_be">Com TO BE Disponível</option>
+                            <option value="ambos">AS IS &amp; TO BE</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="filter-status">Situação do Processo:</label>
+                        <select id="filter-status" class="filter-select">
+                            <option value="Todos">Todas as Situações</option>
+                            <option value="Validado">Validado</option>
+                            <option value="Implantado">Implantado</option>
+                            <option value="Em documentação">Em Documentação</option>
+                            <option value="Aguardando validação">Aguardando Validação</option>
+                            <option value="Em revisão">Em Revisão</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="filter-sistema">Sistema Utilizado:</label>
+                        <select id="filter-sistema" class="filter-select">
+                            <option value="Todos">Todos os Sistemas</option>
+                            <option value="SEI">SEI</option>
+                            <option value="SIPAC">SIPAC</option>
+                            <option value="Contratos.gov.br">Contratos.gov.br</option>
+                            <option value="SISLOG">SISLOG</option>
+                            <option value="Power BI">Power BI / RPA</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="repo-sort">Ordenar por:</label>
+                        <select id="repo-sort" class="filter-select">
+                            <option value="codigo">Código (Padrão)</option>
+                            <option value="nome">Nome do Processo (A-Z)</option>
+                            <option value="recente">Mais Recentes</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="toolbar-footer">
+                    <div class="results-count" id="results-count">Carregando catálogo de processos...</div>
+                    <div class="view-switch">
+                        <span class="view-label">Visualização:</span>
+                        <button class="view-btn active" id="view-cards-btn" title="Visualização em Cards"><i
+                                class="fa-solid fa-grip"></i> Cards</button>
+                        <button class="view-btn" id="view-table-btn" title="Visualização em Tabela"><i
+                                class="fa-solid fa-table-list"></i> Tabela</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Container de Cards -->
+            <div class="repo-grid" id="repo-grid">
+                <!-- Injetado dinamicamente via JavaScript -->
+            </div>
+
+            <!-- Container de Tabela -->
+            <div class="repo-table-container hidden" id="repo-table-container">
+                <table class="repo-table" id="repo-table">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Nome do Processo</th>
+                            <th>Frente</th>
+                            <th>Unidade Responsável</th>
+                            <th>Nível</th>
+                            <th>Mapeamento</th>
+                            <th>Situação</th>
+                            <th>Versão</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="repo-table-body">
+                        <!-- Injetado dinamicamente via JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 04: GESTÃO POR PROCESSOS (2 ABAS: MODELOS DE DOCUMENTOS E POPS/MANUAIS) -->
+    <section class="section section-light" id="gestao-processos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Padronização &amp; Manuais</span>
+                <h2 class="section-title">Gestão por Processos</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Biblioteca oficial de modelos padronizados e coleção de Procedimentos
+                    Operacionais Padrão e Manuais desenvolvidos pelo projeto para a SESAP/RN.</p>
+            </div>
+
+            <!-- Abas Principais da Seção -->
+            <div class="section-tabs" id="bpm-section-tabs">
+                <button class="section-tab-btn active" data-tab="tab-modelos"><i class="fa-solid fa-file-invoice"></i>
+                    Modelos de Documentos</button>
+                <button class="section-tab-btn" data-tab="tab-pops"><i class="fa-solid fa-book-bookmark"></i> POPs e
+                    Manuais da SESAP/RN</button>
+            </div>
+
+            <!-- ABA 1: MODELOS DE DOCUMENTOS -->
+            <div class="section-tab-panel active" id="tab-modelos">
+                <div class="tab-intro-banner">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>Modelos e instrumentos padronizados utilizados pelo Projeto BPM SESAP/RN para estruturação,
+                        modelagem e redação técnica dos documentos institucionais.</p>
+                </div>
+                <div class="models-grid" id="models-grid">
+                    <!-- Injetado dinamicamente via JavaScript -->
+                </div>
+            </div>
+
+            <!-- ABA 2: POPS E MANUAIS -->
+            <div class="section-tab-panel" id="tab-pops">
+                <div class="tab-intro-banner">
+                    <i class="fa-solid fa-book-open"></i>
+                    <p>Procedimentos Operacionais Padrão (POPs), manuais técnicos e rotinas homologadas desenvolvidas
+                        pelas frentes de trabalho para as unidades da rede de saúde estadual.</p>
+                </div>
+
+                <!-- Barra de Busca e Filtros para POPs e Manuais -->
+                <div class="docs-filter-bar">
+                    <div class="docs-search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="pops-search"
+                            placeholder="Pesquisar manual ou POP por título ou palavra-chave..."
+                            aria-label="Pesquisar manuais e POPs">
+                    </div>
+                    <div class="docs-filter-selects">
+                        <select id="pops-filter-front" class="filter-select">
+                            <option value="Todas">Todas as Frentes</option>
+                            <option value="Compras">Compras</option>
+                            <option value="Aquisições">Aquisições</option>
+                            <option value="Manutenção">Manutenção</option>
+                            <option value="Custos">Custos</option>
+                            <option value="Terceirizados">Terceirizados</option>
+                            <option value="Sistemas">Sistemas</option>
+                            <option value="Históricos e Transversais">Históricos</option>
+                        </select>
+                        <select id="pops-filter-type" class="filter-select">
+                            <option value="Todos">Todos os Tipos</option>
+                            <option value="Procedimento Operacional Padrão">POPs</option>
+                            <option value="Manual">Manuais</option>
+                            <option value="Caderno Técnico">Cadernos / Minutas</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="pops-grid" id="pops-grid">
+                    <!-- Injetado dinamicamente via JavaScript -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 05: INDICADORES DE DESEMPENHO (PAINEL DO PROJETO DIMP COM NAVEGAÇÃO DE BOTÕES DO DASHBOARD) -->
+    <section class="section section-alt" id="indicadores">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Monitoramento &amp; Tomada de Decisão</span>
+                <h2 class="section-title">Painel de Indicadores — Projeto DIMP SESAP/RN</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Acesso aos painéis analíticos do Projeto DIMP, com acompanhamento de volume
+                    de processos, compras públicas e métricas da saúde.</p>
+            </div>
+
+            <!-- Streamlit e Dashboards Web Embedding -->
+            <div class="dashboard-wrapper">
+                <div class="dashboard-header-bar">
+                    <div class="dash-title-group">
+                        <span class="dash-badge"><i class="fa-solid fa-circle-dot live-dot"></i> Ao Vivo</span>
+                        <h3 class="dash-title" id="dash-main-title">Painel de Indicadores</h3>
+                    </div>
+
+                    <!-- Botões de Acesso a Todos os Painéis no Mesmo Lugar -->
+                    <div class="dash-views-nav" id="dash-views-nav">
+                        <button class="dash-view-btn active"
+                            data-url="https://dashprojetosesap.streamlit.app/?embed=true"
+                            data-external="https://dashprojetosesap.streamlit.app/"
+                            data-type="streamlit"
+                            title="Painel integrado de indicadores do Projeto DIMP"><i
+                                class="fa-solid fa-chart-line"></i> Painel do Projeto DIMP</button>
+                        <button class="dash-view-btn"
+                            data-url="https://sesapbpm.github.io/dashboard_aquisi-es_2.0_atualizado/"
+                            data-external="https://sesapbpm.github.io/dashboard_aquisi-es_2.0_atualizado/"
+                            data-type="web"
+                            title="Dashboard de Aquisições e Estoques da Rede"><i
+                                class="fa-solid fa-boxes-stacked"></i> Aquisições</button>
+                        <button class="dash-view-btn"
+                            data-url="https://sesapbpm.github.io/DashboardContratos/"
+                            data-external="https://sesapbpm.github.io/DashboardContratos/"
+                            data-type="web"
+                            title="Dashboard de Contratos e Gestão"><i
+                                class="fa-solid fa-file-contract"></i> Contratos</button>
+                        <button class="dash-view-btn"
+                            data-url="https://sesapbpm.github.io/pca-sesap-dashboard/"
+                            data-external="https://sesapbpm.github.io/pca-sesap-dashboard/"
+                            data-type="web"
+                            title="Dashboard Gerencial do PCA / Central de Compras"><i
+                                class="fa-solid fa-building-columns"></i> Central de Compras (PCA)</button>
+                    </div>
+
+                    <div class="dash-controls">
+                        <button class="btn btn-sm btn-outline" id="reload-dash-btn"
+                            title="Recarregar Dados do Painel"><i class="fa-solid fa-rotate-right"></i>
+                            Recarregar</button>
+                        <button class="btn btn-sm btn-outline" id="fullscreen-dash-btn"
+                            title="Expandir Painel em Tela Cheia"><i class="fa-solid fa-expand"></i> Tela Cheia</button>
+                        <a href="https://dashprojetosesap.streamlit.app/" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-sm btn-primary" id="open-dash-external"
+                            title="Abrir painel atualmente selecionado em nova aba"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i> Abrir em Nova Aba</a>
+                    </div>
+                </div>
+
+                <!-- Embed Container com Suporte a Streamlit e Dashboards Web -->
+                <div class="streamlit-embed-container is-streamlit" id="dash-container">
+                    <div class="dash-loader" id="dash-loader">
+                        <div class="loader-spinner"></div>
+                        <p id="dash-loader-text">Carregando painel do projeto DIMP...</p>
+                    </div>
+                    <div class="streamlit-iframe-cropper" id="dash-cropper">
+                        <!-- Link histórico do Power BI preservado para eventual consulta futura:
+                        https://app.powerbi.com/view?r=eyJrIjoiMDVlMDk1YmMtZjJjYS00OWE1LTg3OTgtM2M3YjBkZDk4NjJiIiwidCI6IjY2N2ZhN2QzLWRmYzMtNDlhMS05ZWVmLTA0NThiNWY5NzFjNyJ9
+                        -->
+                        <iframe id="streamlit-iframe" src="https://dashprojetosesap.streamlit.app/?embed=true"
+                            title="Painel do Projeto DIMP SESAP/RN" loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            sandbox="allow-same-origin allow-scripts allow-popups allow-forms">
+                        </iframe>
+                    </div>
+                    <div class="streamlit-footer-mask" id="dash-footer-mask" aria-hidden="true"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 06: RELATÓRIOS E RESULTADOS (COM RESULTADOS CENTRALIZADOS) -->
+    <section class="section section-light" id="relatorios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Transparência &amp; Entregas</span>
+                <h2 class="section-title">Relatórios e Resultados do Projeto</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Acesso público aos relatórios técnicos, diagnósticos, resumos executivos e
+                    resultados alcançados pelo Projeto DIMP SESAP/RN.</p>
+            </div>
+
+            <!-- Filtros de Relatórios -->
+            <div class="reports-filter-bar">
+                <button class="report-filter-btn active" data-category="Todas">Todos os Relatórios</button>
+                <button class="report-filter-btn" data-category="Relatórios Técnicos">Relatórios Técnicos</button>
+                <button class="report-filter-btn" data-category="Resumos Executivos">Resumos Executivos</button>
+            </div>
+
+            <!-- Grid de Relatórios -->
+            <div class="reports-grid" id="reports-grid">
+                <!-- Injetado dinamicamente via JavaScript -->
+            </div>
+
+            <!-- Principais Resultados Alcançados (Centralizados na Página) -->
+            <div class="results-delivered-box">
+                <h3 class="results-title"><i class="fa-solid fa-trophy"></i> Principais Resultados Alcançados na Prática
+                </h3>
+                <div class="results-cards-grid">
+                    <div class="result-box">
+                        <div class="result-number">60%</div>
+                        <h4>Redução no Lead Time de Folhas de Ponto</h4>
+                        <p>Redução do tempo total de conferência das folhas de ponto dos terceirizados de 38 para 15
+                            dias úteis com o VSM TO BE.</p>
+                    </div>
+                    <div class="result-box">
+                        <div class="result-number">95%</div>
+                        <h4>Ganho de Tempo no Inventário (RPA)</h4>
+                        <p>Automação robótica reduziu o tempo de consolidação do inventário hospitalar de 40 horas
+                            mensais para apenas 1.5 horas.</p>
+                    </div>
+                    <div class="result-box">
+                        <div class="result-number">R$ 480k</div>
+                        <h4>Efetividade em Glosas de Fiscalização</h4>
+                        <p>Mapeamento e padronização que asseguraram a correta retenção anual de postos não preenchidos
+                            na prestação de serviços.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 07: PROJETOS REALIZADOS PELO DIMP -->
+    <section class="section section-alt" id="projetos-realizados">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Trajetória Institucional</span>
+                <h2 class="section-title">Projetos Realizados pelo DIMP</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Projetos de modernização de processos, diagnóstico operacional e gestão hospitalar desenvolvidos pela equipe do DIMP.</p>
+            </div>
+
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <div class="partner-logo-container">
+                        <img src="images/logo-huol.png" alt="Logo HUOL" class="partner-logo">
+                    </div>
+                    <h3 class="partner-name">Hospital Universitário Onofre Lopes (HUOL)</h3>
+                    <p class="partner-role">Projeto de Mapeamento e Engenharia de Processos Hospitalares</p>
+                    <p class="partner-desc">Aplicação pioneira de metodologias BPM, mapeamento de fluxos cirúrgicos e ambulatoriais, diagnóstico de tempos de espera e padronização de rotinas assistenciais de alta complexidade.</p>
+                </div>
+
+                <div class="partner-card">
+                    <div class="partner-logo-container">
+                        <img src="images/logo-caurn.png" alt="Logo CAURN" class="partner-logo">
+                    </div>
+                    <h3 class="partner-name">Caixa de Assistência dos Servidores da UFRN (CAURN)</h3>
+                    <p class="partner-role">Projeto de Otimização de Auditoria e Regulação em Saúde</p>
+                    <p class="partner-desc">Mapeamento e redesenho dos processos de regulação assistencial, autorização de guias de exames/procedimentos e auditoria técnica de contas médicas para maior eficiência operacional.</p>
+                </div>
+
+                <div class="partner-card">
+                    <div class="partner-logo-container">
+                        <img src="images/logo-hgjm.png" alt="Logo Hospital João Machado" class="partner-logo">
+                    </div>
+                    <h3 class="partner-name">Hospital Geral Dr. João Machado (HGJM)</h3>
+                    <p class="partner-role">Projeto Piloto de Engenharia Clínica e Fiscalização</p>
+                    <p class="partner-desc">Implantação de piloto para inventário técnico, gestão do ciclo de calibração de equipamentos médico-hospitalares e estruturação da fiscalização de contratos da unidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 08: NOSSA EQUIPE & CONTATO TÉCNICO (NO FINAL ANTES DO RODAPÉ) -->
+    <section class="section section-light" id="equipe">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Corpo Técnico e Acadêmico</span>
+                <h2 class="section-title">Nossa Equipe</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Professores, coordenadores, gerência e discentes dedicados ao Projeto BPM
+                    SESAP/RN. <strong>Para acessar o perfil profissional de cada integrante, clique na foto.</strong>
+                </p>
+            </div>
+
+            <!-- Grupo: Coordenação -->
+            <div class="team-group">
+                <h3 class="team-group-title"><i class="fa-solid fa-user-tie"></i> Coordenação do Projeto</h3>
                 <div class="team-grid">
                     <div class="team-member">
-                        <a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=1378360" target="_blank">
+                        <a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=1378360" target="_blank"
+                            rel="noopener noreferrer" title="Ver perfil no SIGAA">
                             <img src="images/Marco.png" alt="Foto de Marco Antônio Leandro Cabral" class="team-photo">
                         </a>
-                        <h3 class="member-name">Marco Antônio Leandro Cabral</h3>
-                        <p class="member-role role-coordenador">Coordenador</p>
+                        <h4 class="member-name">Marco Antônio Leandro Cabral</h4>
+                        <p class="member-role role-coordenador">Coordenador Geral</p>
                     </div>
                     <div class="team-member">
-                        <a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=4859773" target="_blank">
+                        <a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=4859773" target="_blank"
+                            rel="noopener noreferrer" title="Ver perfil no SIGAA">
                             <img src="images/Ricardo.png" alt="Foto de Ricardo Pires de Souza" class="team-photo">
                         </a>
-                        <h3 class="member-name">Ricardo Pires de Souza </h3>
+                        <h4 class="member-name">Ricardo Pires de Souza</h4>
                         <p class="member-role role-vice">Vice-Coordenador</p>
                     </div>
+                </div>
+            </div>
+
+            <!-- Grupo: Professores Colaboradores e Gerência -->
+            <div class="team-group">
+                <h3 class="team-group-title"><i class="fa-solid fa-chalkboard-user"></i> Professores Colaboradores e
+                    Gerência</h3>
+                <div class="team-grid">
                     <div class="team-member">
-                        <a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=1330544" target="_blank">
+                        <a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=1330544" target="_blank"
+                            rel="noopener noreferrer" title="Ver perfil no SIGAA">
                             <img src="images/jesus.png" alt="Foto de Jesús Leodaly Salazar Aramayo" class="team-photo">
                         </a>
-                        <h3 class="member-name">Jesús Leodaly Salazar Aramayo</h3>
-                        <p class="member-role role-docente">Docente</p>
+                        <h4 class="member-name">Jesús Leodaly Salazar Aramayo</h4>
+                        <p class="member-role role-docente">Professor Colaborador</p>
                     </div>
                     <div class="team-member">
-                        <a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=1086657" target="_blank">
+                        <a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=1086657" target="_blank"
+                            rel="noopener noreferrer" title="Ver perfil no SIGAA">
                             <img src="images/Joelton.png" alt="Foto de Joelton Fonseca Barbosa" class="team-photo">
                         </a>
-                        <h3 class="member-name">Joelton Fonseca Barbosa</h3>
-                        <p class="member-role role-docente">Docente</p>
+                        <h4 class="member-name">Joelton Fonseca Barbosa</h4>
+                        <p class="member-role role-docente">Professor Colaborador</p>
                     </div>
                     <div class="team-member">
-                        <a href="https://www.linkedin.com/in/adrianamarques01" target="_blank">
+                        <a href="https://www.linkedin.com/in/adrianamarques01" target="_blank" rel="noopener noreferrer"
+                            title="Ver perfil no LinkedIn">
                             <img src="images/Adriana.png" alt="Foto de Adriana Calvacante Marques" class="team-photo">
                         </a>
-                        <h3 class="member-name">Adriana Calvacante Marques</h3>
-                        <p class="member-role role-docente">Docente</p>
+                        <h4 class="member-name">Adriana Calvacante Marques</h4>
+                        <p class="member-role role-docente">Professora Colaboradora</p>
                     </div>
                     <div class="team-member">
-                        <a href="#" target="_blank">
-                            <img src="images/ana.png" alt="Foto de Ana Cristina" class="team-photo">
+                        <a href="#" title="Gerente de Processos">
+                            <img src="images/ana.png" alt="Foto de Ana Cristina" class="team-photo" onerror="this.onerror=null; this.src='images/ana.jpg';">
                         </a>
-                        <h3 class="member-name">Ana Cristina</h3>
-                        <p class="member-role role-gerente">Gerente</p>
+                        <h4 class="member-name">Ana Cristina</h4>
+                        <p class="member-role role-gerente">Gerente de Processos</p>
                     </div>
+                </div>
+            </div>
+
+            <!-- Grupo: Discentes Pesquisadores Atuais -->
+            <div class="team-group">
+                <h3 class="team-group-title"><i class="fa-solid fa-users-gear"></i> Discentes Pesquisadores</h3>
+                <div class="team-grid">
                     <div class="team-member">
-                        <a href="https://www.linkedin.com/in/maria-eduarda-botelho-758983302/" target="_blank">
+                        <a href="https://www.linkedin.com/in/maria-eduarda-botelho-758983302/" target="_blank"
+                            rel="noopener noreferrer" title="Ver perfil no LinkedIn">
                             <img src="images/Duda.jpeg" alt="Foto de Maria Eduarda Botelho" class="team-photo">
                         </a>
-                        <h3 class="member-name">Maria Eduarda Botelho</h3>
-                        <p class="member-role role-discente">Discente</p>
+                        <h4 class="member-name">Maria Eduarda Botelho</h4>
+                        <p class="member-role role-discente">Pesquisadora Bolsista</p>
                     </div>
                     <div class="team-member">
-                        <a href="#" target="_blank">
+                        <a href="#" title="Perfil Discente">
                             <img src="images/Mariana Torres.jpeg" alt="Foto de Mariana Torres" class="team-photo">
                         </a>
-                        <h3 class="member-name">Mariana Torres</h3>
-                        <p class="member-role role-discente">Discente</p>
+                        <h4 class="member-name">Mariana Torres</h4>
+                        <p class="member-role role-discente">Pesquisadora Bolsista</p>
                     </div>
                     <div class="team-member">
-                        <a href="#" target="_blank">
+                        <a href="#" title="Perfil Discente">
                             <img src="images/Maria Stephanie Rodrigues.jpeg" alt="Foto de Maria Stephanie Rodrigues"
                                 class="team-photo">
                         </a>
-                        <h3 class="member-name">Maria Stephanie Rodrigues</h3>
-                        <p class="member-role role-discente">Discente</p>
+                        <h4 class="member-name">Maria Stephanie Rodrigues</h4>
+                        <p class="member-role role-discente">Pesquisadora Bolsista</p>
                     </div>
                     <div class="team-member">
-                        <a href="#" target="_blank">
-                            <img src="images/Wenia Beatriz.jpg" alt="Foto de Wenia Beatriz" class="team-photo"
-                                style="object-position: 50% 15%;">
+                        <a href="#" title="Perfil Discente">
+                            <img src="images/Wenia Beatriz.jpg" alt="Foto de Wenia Beatriz" class="team-photo">
                         </a>
-                        <h3 class="member-name">Wenia Beatriz</h3>
-                        <p class="member-role role-discente">Discente</p>
+                        <h4 class="member-name">Wenia Beatriz</h4>
+                        <p class="member-role role-discente">Pesquisadora Bolsista</p>
                     </div>
                     <div class="team-member">
-                        <a href="#" target="_blank">
+                        <a href="#" title="Perfil Discente">
                             <img src="images/João Santiago.jpg" alt="Foto de João Santiago" class="team-photo">
                         </a>
-                        <h3 class="member-name">João Santiago</h3>
-                        <p class="member-role role-discente">Discente</p>
-                    </div>
-                </div>
-
-                <div class="section-header" style="margin-top: 50px;">
-                    <h3 class="section-title" style="font-size: 2rem;">Ex - Membros</h3>
-                    <div class="section-divider"></div>
-                </div>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <a href="https://www.linkedin.com/in/jennefer-lima" target="_blank">
-                            <img src="images/Jennefer Lima.jpg" alt="Foto de Jennefer Lima" class="team-photo">
-                        </a>
-                        <h3 class="member-name">Jennefer Lima</h3>
-                        <p class="member-role role-exmembro">Ex - Membro</p>
-                    </div>
-                    <div class="team-member">
-                        <a href="https://www.linkedin.com/in/macielcosta97" target="_blank">
-                            <img src="images/Maciel Costa.jpg" alt="Foto de Maciel Costa" class="team-photo">
-                        </a>
-                        <h3 class="member-name">Maciel Costa</h3>
-                        <p class="member-role role-exmembro">Ex - Membro</p>
-                    </div>
-                    <div class="team-member">
-                        <a href="https://www.linkedin.com/in/diego-lettieri-55b7b6118/" target="_blank">
-                            <img src="images/Diego.png" alt="Foto de Diego Matoso Lettieri G. C. Pacheco"
-                                class="team-photo">
-                        </a>
-                        <h3 class="member-name">Diego Matoso Lettieri G. C. Pacheco</h3>
-                        <p class="member-role role-exmembro">Ex - Membro</p>
-                    </div>
-                    <div class="team-member">
-                        <a href="#" target="_blank">
-                            <img src="images/Sergio.png" alt="Foto de Antônio Sérgio de Araújo Pereira"
-                                class="team-photo">
-                        </a>
-                        <h3 class="member-name">Antônio Sérgio de Araújo Pereira</h3>
-                        <p class="member-role role-exmembro">Ex - Membro</p>
-                    </div>
-                    <div class="team-member">
-                        <a href="#" target="_blank">
-                            <img src="images/Brendha Vieira.jpeg" alt="Foto de Brendha Vieira" class="team-photo">
-                        </a>
-                        <h3 class="member-name">Brendha Vieira</h3>
-                        <p class="member-role role-exmembro">Ex - Membro</p>
-                    </div>
-                    <div class="team-member">
-                        <a href="#" target="_blank">
-                            <img src="images/Luiz Guilherme Oliveira Araújo.jpg" alt="Foto de Luiz Guilherme"
-                                class="team-photo">
-                        </a>
-                        <h3 class="member-name">Luiz Guilherme Oliveira Araújo</h3>
-                        <p class="member-role role-exmembro">Ex - Membro</p>
-                    </div>
-                    <div class="team-member">
-                        <a href="#" target="_blank">
-                            <img src="images/Wilka.png" alt="Foto de Wilka" class="team-photo">
-                        </a>
-                        <h3 class="member-name">Wilka Santos</h3>
-                        <p class="member-role role-exmembro">Ex - Membro</p>
-                    </div>
-                    <div class="team-member">
-                        <a href="#" target="_blank">
-                            <img src="images/Pedro.png" alt="Foto de Pedro" class="team-photo">
-                        </a>
-                        <h3 class="member-name">Pedro Estevo</h3>
-                        <p class="member-role role-exmembro">Ex - Membro</p>
-                    </div>
-                    <div class="team-member">
-                        <a href="#" target="_blank">
-                            <img src="images/Abel.png" alt="Foto de Abel" class="team-photo">
-                        </a>
-                        <h3 class="member-name">Abel Lameque</h3>
-                        <p class="member-role role-exmembro">Ex - Membro</p>
-                    </div>
-                    <div class="team-member">
-                        <a href="#" target="_blank">
-                            <img src="images/NATHALIA GALVÃO.jpg" alt="Foto de Nathalia" class="team-photo">
-                        </a>
-                        <h3 class="member-name">Nathalia Galvão</h3>
-                        <p class="member-role role-exmembro">Ex - Membro</p>
-                    </div>
-                    <div class="team-member">
-                        <a href="#" target="_blank">
-                            <img src="images/Maria Eduarda Medeiros.png" alt="Foto de Maria Eduarda Medeiros"
-                                class="team-photo">
-                        </a>
-                        <h3 class="member-name">Maria Eduarda Medeiros</h3>
-                        <p class="member-role role-exmembro">Ex - Membro</p>
-                    </div>
-                    <div class="team-member">
-                        <a href="#" target="_blank">
-                            <img src="images/Will.png" alt="Foto de Will" class="team-photo">
-                        </a>
-                        <h3 class="member-name">Will</h3>
-                        <p class="member-role role-exmembro">Ex - Membro</p>
+                        <h4 class="member-name">João Santiago</h4>
+                        <p class="member-role role-discente">Pesquisador Bolsista</p>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section id="proposito" class="section section-alt">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Nosso Propósito</h2>
-                    <div class="section-divider"></div>
-                </div>
-                <div class="purpose-content">
-                    <div class="purpose-icon">
-                        <i class="fas fa-compass"></i>
-                    </div>
-                    <p class="purpose-text">
-                        Transformar os processos de gestão nas esferas estratégica, tática e operacional
-                        da Secretaria de Saúde do Estado do Rio Grande do Norte (SESAP), por meio da
-                        abordagem BPM (Business Process Management), garantindo mais eficiência,
-                        transparência e qualidade no serviço prestado à população.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="fases" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">O que estamos fazendo na prática</h2>
-                    <div class="section-divider"></div>
-                </div>
-                <div class="phases-timeline">
-                    <div class="phase-card">
-                        <div class="phase-number">1</div>
-                        <div class="phase-content">
-                            <h3 class="phase-title">Ano 1 (Nível Estratégico)</h3>
-                            <p class="phase-description">
-                                Mapeamento e melhoria dos processos estratégicos, identificando gargalos,
-                                construindo indicadores-chave (KPIs) e propondo uma governança moderna
-                                e adaptável às políticas públicas de saúde.
-                            </p>
-                            <div class="phase-status completed"><i class="fas fa-check-circle"></i> Finalizado</div>
-                        </div>
-                    </div>
-
-                    <div class="phase-card">
-                        <div class="phase-number">2</div>
-                        <div class="phase-content">
-                            <h3 class="phase-title">Ano 2 (Atual - Nível Tático)</h3>
-                            <p class="phase-description">
-                                O projeto avança para a otimização dos processos intermediários,
-                                com foco na automação de tarefas, eliminação de redundâncias e
-                                capacitação das equipes gestoras.
-                            </p>
-                            <div class="phase-status in-progress"><i class="fas fa-sync-alt fa-spin"></i> Em Andamento
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="phase-card">
-                        <div class="phase-number">3</div>
-                        <div class="phase-content">
-                            <h3 class="phase-title">Ano 3 (Nível Operacional)</h3>
-                            <p class="phase-description">
-                                Será a vez de promover a integração de sistemas, informatização de
-                                fluxos e qualificação dos serviços diretamente ofertados à população.
-                            </p>
-                            <div class="phase-status future"><i class="fas fa-calendar-alt"></i> Planejado</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="experiencias" class="section section-alt">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Já aplicamos nossos métodos em instituições como:</h2>
-                    <div class="section-divider"></div>
-                </div>
-                <div class="experiences-grid">
-                    <div class="experience-card">
-                        <div class="experience-icon"><img src="images/logo-huol.png" alt="Logo do HUOL"></div>
-                        <p class="experience-description">Otimização de estoques com ferramentas Lean Healthcare.</p>
-                    </div>
-                    <div class="experience-card">
-                        <div class="experience-icon"><img src="images/logo-caurn.png" alt="Logo da CAURN"></div>
-                        <p class="experience-description">Desenvolvimento e monitoramento de indicadores em unidades de
-                            Atenção Primária à Saúde.</p>
-                    </div>
-                    <div class="experience-card">
-                        <div class="experience-icon"><img src="images/logo-hgjm.png" alt="Logo do HGJM"></div>
-                        <p class="experience-description">Inovação na gestão de contratos e processos com uso de BPM e
-                            MCDA.</p>
-                    </div>
-                </div>
-                <div class="project-highlight">
-                    <div class="highlight-icon"><i class="fas fa-lightbulb"></i></div>
-                    <p>
-                        Agora, com o novo projeto iniciado em novembro de 2024, estamos construindo
-                        um modelo de gestão pública mais moderno, inteligente e conectado à realidade
-                        da saúde potiguar.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="bpm" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">BPM - <em>Business Process Management</em></h2>
-                    <div class="section-divider"></div>
-                </div>
-                <div class="bpm-content">
-                    <div class="bmp-definition">
-                        <p>
-                            BPM (Business Process Management) é uma abordagem de gerenciamento adaptável,
-                            desenvolvido com a finalidade de sistematizar e facilitar processos
-                            organizacionais complexos...
-                        </p>
-                    </div>
-
-                    <div class="bpm-advantages">
-                        <h3>Vantagens do BPM</h3>
-                        <div class="advantages-grid">
-                            <div class="advantage-item">
-                                <i class="fas fa-sync-alt"></i>
-                                <h4>Melhoria Contínua</h4>
-                                <p>Permite que as organizações sejam mais eficientes e assertivas</p>
-                            </div>
-                            <div class="advantage-item">
-                                <i class="fa-solid fa-bullseye"></i>
-                                <h4>Foco nos Objetivos</h4>
-                                <p>Alcança objetivos organizacionais com processos complexos</p>
-                            </div>
-                            <div class="advantage-item">
-                                <i class="fas fa-tools"></i>
-                                <h4>Ferramentas Integradas</h4>
-                                <p>Métodos, técnicas e ferramentas para analisar e otimizar processos</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="indicadores" class="section section-alt">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Painel de Indicadores</h2>
-                    <div class="section-divider"></div>
-                    <p class="section-subtitle">Acompanhe o monitoramento em tempo real dos processos de compras,
-                        contratações e gestão estratégica da SESAP/RN.</p>
-                </div>
-
-                <!-- Controles e Alternância de Visualização -->
-                <div class="dashboard-controls">
-                    <div class="dashboard-tabs">
-                        <button type="button" class="dash-tab-btn active" onclick="switchDashboard('streamlit')">
-                            <i class="fas fa-chart-line"></i> Dashboard Central de Compras
-                        </button>
-                        <!-- <button type="button" class="dash-tab-btn" onclick="switchDashboard('powerbi')">
-                            <i class="fas fa-chart-pie"></i> Painel Power BI (Histórico / Alternativo)
-                        </button> -->
-                    </div>
-
-                    <div class="dashboard-actions">
-                        <button type="button" class="dash-btn" onclick="reloadIframe()" title="Recarregar painel">
-                            <i class="fas fa-sync-alt"></i> Recarregar
-                        </button>
-                        <a href="https://dashprojetosesap.streamlit.app/#3-central-de-compras" target="_blank"
-                            rel="noopener noreferrer" class="dash-btn dash-btn-primary"
-                            title="Abrir em nova aba / Acordar app">
-                            <i class="fas fa-external-link-alt"></i> Abrir em Tela Cheia
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Dica informativa de inicialização -->
-                <div class="dashboard-notice" id="dashboard-notice">
-                    <i class="fas fa-info-circle"></i>
-                    <span>
-                        <strong>Dica de Acesso:</strong> Se o painel Streamlit exibir a mensagem de inicialização
-                        (<em>"App is sleeping"</em>), clique em <strong><a
-                                href="https://dashprojetosesap.streamlit.app/#3-central-de-compras" target="_blank"
-                                rel="noopener noreferrer">Abrir em Tela Cheia</a></strong> para reativá-lo na nuvem e
-                        depois clique em <strong>Recarregar</strong>.
-                    </span>
-                </div>
-
-                <!-- Visualização Streamlit (Principal com modo embed) -->
-                <div id="view-streamlit" class="bi-container">
-                    <iframe id="streamlit-frame" title="Dashboard DIMP SESAP - Central de Compras"
-                        src="https://dashprojetosesap.streamlit.app/?embed=true#3-central-de-compras" frameborder="0"
-                        allow="fullscreen; clipboard-read; clipboard-write;"
-                        sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-modals allow-top-navigation-by-user-activation"
-                        loading="lazy"></iframe>
-                </div>
-
-                <!-- Visualização Power BI (Alternativo / Mantido conforme solicitado) -->
-                <!-- <div id="view-powerbi" class="bi-container" style="display: none;">
-                    <iframe id="powerbi-frame" title="Dashboard Power BI DIMP SESAP"
-                        src="https://app.powerbi.com/view?r=eyJrIjoiMDVlMDk1YmMtZjJjYS00OWE1LTg3OTgtM2M3YjBkZDk4NjJiIiwidCI6IjY2N2ZhN2QzLWRmYzMtNDlhMS05ZWVmLTA0NThiNWY5NzFjNyJ9"
-                        frameborder="0" allowFullScreen="true" loading="lazy"></iframe>
-                </div> -->
-
-                <!-- Cards com Destaques da Central de Compras -->
-                <div class="dashboard-features">
-                    <div class="dash-feature-card">
-                        <div class="dash-feature-icon"><i class="fas fa-shopping-cart"></i></div>
-                        <h4>Central de Compras</h4>
-                        <p>Visão integrada dos pedidos de compra, atas de registro e aquisições hospitalares da SESAP.
-                        </p>
-                    </div>
-                    <div class="dash-feature-card">
-                        <div class="dash-feature-icon"><i class="fas fa-clock"></i></div>
-                        <h4>Prazos & Tramitação</h4>
-                        <p>Controle do lead time de tramitação nas etapas de cotação, empenho e liquidação de processos.
-                        </p>
-                    </div>
-                    <div class="dash-feature-card">
-                        <div class="dash-feature-icon"><i class="fas fa-boxes-stacked"></i></div>
-                        <h4>Almoxarifado & Estoque</h4>
-                        <p>Monitoramento de distribuição para unidades de saúde e prevenção de desabastecimento.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="processos" class="section section-alt">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Processos Mapeados</h2>
-                    <div class="section-divider"></div>
-                </div>
-
-                <!-- Explicação sobre processos AS IS e TO BE -->
-                <div class="process-info-container">
-                    <div class="process-info-header">
-                        Entendendo os Processos Mapeados
-                    </div>
-                    <div class="process-info-content">
-                        <div class="process-type">
-                            <h3><i class="fas fa-map-marked icon-as-is"></i> Processos AS IS (Atual)</h3>
-                            <p>São os processos mapeados exatamente como são executados atualmente na organização,
-                                representando a realidade operacional presente da SESAP/RN.</p>
-                            <p><strong>Características:</strong></p>
-                            <ul>
-                                <li>Documentam a situação atual dos fluxos de trabalho</li>
-                                <li>Identificam gargalos, redundâncias e problemas existentes</li>
-                                <li>Servem como ponto de partida para análise e diagnóstico</li>
-                                <li>Representam o "estado presente" antes das melhorias</li>
-                                <li>Permitem avaliar oportunidades de otimização</li>
-                            </ul>
-                        </div>
-                        <div class="process-type">
-                            <h3><i class="fas fa-pencil-ruler icon-to-be"></i> Processos TO BE (Futuro)</h3>
-                            <p>São os processos redesenhados e otimizados, representando como os fluxos de trabalho
-                                deverão ser executados após a implementação das melhorias propostas.</p>
-                            <p><strong>Características:</strong></p>
-                            <ul>
-                                <li>Incorporam soluções para os problemas identificados</li>
-                                <li>Apresentam fluxos simplificados e mais eficientes</li>
-                                <li>Eliminam atividades redundantes e burocracias desnecessárias</li>
-                                <li>Representam o "estado futuro" desejado para a organização</li>
-                                <li>Servem como guia para implementação de melhorias</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="process-tabs">
-                    <div class="process-tab" onclick="showTab('as-is')">AS IS (Atual)</div>
-                    <div class="process-tab active" onclick="showTab('to-be')">TO BE (Futuro)</div>
-                </div>
-
-                <div id="as-is" class="processes-grid" style="display: none;">
-                    <div class="process-card">
-                        <div class="process-body">
-                            <div class="process-icon"><i class="fas fa-solid fa-cart-shopping"></i></div>
-                            <h3 class="process-title">Processos de Licitação</h3>
-                            <div class="process-description">
-                                Mapeamento da situação atual dos serviços de:
-                                <ul>
-                                    <li>Pregão e Registro de Preço</li>
-                                    <li>Credenciamento</li>
-                                    <li>Dispensa de Licitação</li>
-                                    <li>Inexigibilidade de Licitação</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="process-footer">
-                            <a href="https://pipolo-lab.github.io/Processos-Licitatorios/" class="btn btn-outline"
-                                target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-external-link-alt"></i> Fluxogramas Atuais
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="process-card">
-                        <div class="process-body">
-                            <div class="process-icon"><i class="fas fa-solid fa-list-check"></i></div>
-                            <h3 class="process-title">Aquisições - Materiais de Consumo</h3>
-                            <div class="process-description">
-                                Mapeamento da situação atual dos serviços de:
-                                <ul>
-                                    <li>Aquisição de Materiais</li>
-                                    <li>Distribuição para a Rede</li>
-                                    <li>Levantamento de Consumo</li>
-                                    <li>Recebimento no Almoxarifado</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="process-footer">
-                            <a href="https://pipolo-lab.github.io/Fluxograma---Aquisi-es---Materiais-de-Consumo-/"
-                                class="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-external-link-alt"></i> Fluxogramas Atuais
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="process-card">
-                        <div class="process-body">
-                            <div class="process-icon"><i class="fas fa-basket-shopping"></i></div>
-                            <h3 class="process-title">Aquisições - Gêneros Alimentícios</h3>
-                            <div class="process-description">
-                                Mapeamento da situação atual dos serviços de:
-                                <ul>
-                                    <li>Compras</li>
-                                    <li>Distribuição para a Rede</li>
-                                    <li>Levantamento de Consumo</li>
-                                    <li>Recebimento</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="process-footer">
-                            <a href="https://sesapbpm.github.io/G-nerosAliment-cios/#list/" class="btn btn-outline"
-                                target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-external-link-alt"></i> Fluxogramas Atuais
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="process-card">
-                        <div class="process-body">
-                            <div class="process-icon"><i class="fas fa-briefcase-medical"></i></div>
-                            <h3 class="process-title">Órteses, Próteses e Materiais Especiais(OPME)</h3>
-                            <div class="process-description">
-                                Mapeamento da situação atual dos serviços de:
-                                <ul>
-                                    <li>Macroprocesso OPME</li>
-                                    <li>Aquisição de Bens Permanentes</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="process-footer">
-                            <a href="https://sesapbpm.github.io/OPME/" class="btn btn-outline" target="_blank"
+            <!-- Grupo: Ex-Membros (Accordion Expansível) -->
+            <div class="ex-members-accordion">
+                <button class="ex-members-toggle" id="toggle-ex-members" aria-expanded="false">
+                    <span class="toggle-title"><i class="fa-solid fa-clock-rotate-left"></i> Ex-Membros do Projeto
+                        (<span id="ex-members-count">12</span> integrantes)</span>
+                    <span class="toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </button>
+                <div class="ex-members-panel hidden" id="ex-members-panel">
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <a href="https://www.linkedin.com/in/jennefer-lima" target="_blank"
                                 rel="noopener noreferrer">
-                                <i class="fas fa-external-link-alt"></i> Fluxogramas Atuais
+                                <img src="images/Jennefer Lima.jpg" alt="Foto de Jennefer Lima" class="team-photo">
                             </a>
+                            <h4 class="member-name">Jennefer Lima</h4>
+                            <p class="member-role role-ex">Ex-Membro</p>
                         </div>
-                    </div>
-
-                    <div class="process-card">
-                        <div class="process-body">
-                            <div class="process-icon"><i class="fa-solid fa-ellipsis"></i></div>
-                            <h3 class="process-title">Outros</h3>
-                            <div class="process-description">
-                                Mapeamento da situação atual dos serviços de:
-                                <ul>
-                                    <li>Manutenção Corretiva/Preventiva</li>
-                                    <li>Pagamento e Credenciamento</li>
-                                    <li>Descentralização de Crédito Orçamentário</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="process-footer">
-                            <a href="https://sesapbpm.github.io/Outros/" class="btn btn-outline" target="_blank"
+                        <div class="team-member">
+                            <a href="https://www.linkedin.com/in/macielcosta97" target="_blank"
                                 rel="noopener noreferrer">
-                                <i class="fas fa-external-link-alt"></i> Fluxogramas Atuais
+                                <img src="images/Maciel Costa.jpg" alt="Foto de Maciel Costa" class="team-photo">
                             </a>
+                            <h4 class="member-name">Maciel Costa</h4>
+                            <p class="member-role role-ex">Ex-Membro</p>
                         </div>
-                    </div>
-                </div>
-
-                <div id="to-be" class="processes-grid">
-                    <div class="process-card">
-                        <div class="process-body">
-                            <div class="process-icon"><i class="fas fa-user-check"></i></div>
-                            <h3 class="process-title">Terceirizados</h3>
-                            <div class="process-description">
-                                Mapeamento e otimização dos serviços de:
-                                <ul>
-                                    <li>Processo de Pagamento Terceirizados</li>
-                                    <li>Monitoramento da Frequência de Terceirizados</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="process-footer">
-                            <a href="https://pipolo-lab.github.io/Fluxograma-de-Tercerizados/#list/"
-                                class="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-external-link-alt"></i> Fluxogramas
+                        <div class="team-member">
+                            <a href="https://www.linkedin.com/in/diego-lettieri-55b7b6118/" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="images/Diego.png" alt="Foto de Diego Matoso Lettieri G. C. Pacheco"
+                                    class="team-photo">
                             </a>
+                            <h4 class="member-name">Diego Matoso Lettieri G. C. Pacheco</h4>
+                            <p class="member-role role-ex">Ex-Membro</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="relatorios" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Relatórios do Projeto</h2>
-                    <div class="section-divider"></div>
-                    <p class="section-subtitle">Acesse os relatórios parciais e resumos executivos do projeto para
-                        acompanhar os avanços e diagnósticos realizados.</p>
-                </div>
-
-                <div class="reports-grid">
-
-                    <div class="report-card">
-                        <div class="report-body">
-                            <div class="report-icon"><i class="fas fa-file-alt"></i></div>
-                            <h3 class="report-title">Relatório Parcial - Etapa 1 (Out/2024 - Mai/2025)</h3>
-                            <p class="report-description">
-                                Relatório Parcial (Out/2024 - Mai/2025)
-                            </p>
-                        </div>
-                        <div class="report-footer">
-                            <a href="reports/Relatório Parcial Projeto DIMP SESAP.pdf" class="btn btn-primary"
-                                target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-download"></i> Baixar Relatório
+                        <div class="team-member">
+                            <a href="#">
+                                <img src="images/Sergio.png" alt="Foto de Antônio Sérgio de Araújo Pereira"
+                                    class="team-photo">
                             </a>
+                            <h4 class="member-name">Antônio Sérgio de Araújo Pereira</h4>
+                            <p class="member-role role-ex">Ex-Membro</p>
                         </div>
-                    </div>
-
-                    <div class="report-card">
-                        <div class="report-body">
-                            <div class="report-icon"><i class="fas fa-file-invoice"></i></div>
-                            <h3 class="report-title">Resumo Executivo do Relatório Parcial - Etapa 1</h3>
-                            <p class="report-description">
-                                Resumo Executivo (Out/2024 - Mai/2025)
-                            </p>
-                        </div>
-                        <div class="report-footer">
-                            <a href="reports/Resumo Executivo Relatório DIMP SESAP.pdf" class="btn btn-primary"
-                                target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-download"></i> Baixar Resumo
+                        <div class="team-member">
+                            <a href="#">
+                                <img src="images/Brendha Vieira.jpeg" alt="Foto de Brendha Vieira" class="team-photo">
                             </a>
+                            <h4 class="member-name">Brendha Vieira</h4>
+                            <p class="member-role role-ex">Ex-Membro</p>
                         </div>
-                    </div>
-
-                    <div class="report-card">
-                        <div class="report-body">
-                            <div class="report-icon"><i class="fas fa-file-alt"></i></div>
-                            <h3 class="report-title">Relatório Parcial - Etapa 2 (Jun/2025 - Out/2025)</h3>
-                            <p class="report-description">
-                                Consolidação da fase estratégica e diagnóstico das frentes de Terceirização, Aquisições,
-                                Sistemas e Manutenção.
-                            </p>
-                        </div>
-                        <div class="report-footer">
-                            <a href="reports/Relatório Parcial Projeto DIMP SESAP  etapa 2.pdf" class="btn btn-primary"
-                                target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-download"></i> Baixar Relatório
+                        <div class="team-member">
+                            <a href="#">
+                                <img src="images/Luiz Guilherme Oliveira Araújo.jpg"
+                                    alt="Foto de Luiz Guilherme Oliveira Araújo" class="team-photo">
                             </a>
+                            <h4 class="member-name">Luiz Guilherme Oliveira Araújo</h4>
+                            <p class="member-role role-ex">Ex-Membro</p>
+                        </div>
+                        <div class="team-member">
+                            <a href="#">
+                                <img src="images/Wilka.png" alt="Foto de Wilka Santos" class="team-photo">
+                            </a>
+                            <h4 class="member-name">Wilka Santos</h4>
+                            <p class="member-role role-ex">Ex-Membro</p>
+                        </div>
+                        <div class="team-member">
+                            <a href="#">
+                                <img src="images/Pedro.png" alt="Foto de Pedro Estevo" class="team-photo">
+                            </a>
+                            <h4 class="member-name">Pedro Estevo</h4>
+                            <p class="member-role role-ex">Ex-Membro</p>
+                        </div>
+                        <div class="team-member">
+                            <a href="#">
+                                <img src="images/Abel.png" alt="Foto de Abel Lameque" class="team-photo">
+                            </a>
+                            <h4 class="member-name">Abel Lameque</h4>
+                            <p class="member-role role-ex">Ex-Membro</p>
+                        </div>
+                        <div class="team-member">
+                            <a href="#">
+                                <img src="images/NATHALIA GALVÃO.jpg" alt="Foto de Nathalia Galvão" class="team-photo">
+                            </a>
+                            <h4 class="member-name">Nathalia Galvão</h4>
+                            <p class="member-role role-ex">Ex-Membro</p>
+                        </div>
+                        <div class="team-member">
+                            <a href="#">
+                                <img src="images/Maria Eduarda Medeiros.png" alt="Foto de Maria Eduarda Medeiros"
+                                    class="team-photo">
+                            </a>
+                            <h4 class="member-name">Maria Eduarda Medeiros</h4>
+                            <p class="member-role role-ex">Ex-Membro</p>
+                        </div>
+                        <div class="team-member">
+                            <a href="#">
+                                <img src="images/Will.png" alt="Foto de Will" class="team-photo">
+                            </a>
+                            <h4 class="member-name">Will</h4>
+                            <p class="member-role role-ex">Ex-Membro</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="social-media-icons">
-                <a href="https://www.linkedin.com/in/dimp-sesap-bpm-88053a358" target="_blank"
-                    aria-label="Acesse nosso LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/heiiufrn/?hl=en" target="_blank"
-                    aria-label="Acesse nosso Instagram"><i class="fab fa-instagram"></i></a>
+            <!-- CONTATAR EQUIPE TÉCNICA (POSICIONADO ABAIXO DE NOSSA EQUIPE E CENTRALIZADO) -->
+            <div class="contact-section-box" id="contato">
+                <div class="contact-card-centered">
+                    <div class="contact-icon-large"><i class="fa-solid fa-headset"></i></div>
+                    <h3 class="contact-title">Contatar Equipe Técnica</h3>
+                    <p class="contact-desc">A equipe do Projeto DIMP SESAP/RN está à disposição de gestores, fiscais e
+                        servidores da Secretaria de Estado da Saúde Pública para suporte técnico, esclarecimento de
+                        dúvidas e orientações na aplicação prática das metodologias e ferramentas BPM.</p>
+                    <div class="contact-buttons-centered">
+                        <a href="mailto:dimp.sesap@gmail.com" class="btn btn-primary"><i
+                                class="fa-solid fa-envelope"></i> Contatar Equipe Técnica</a>
+                        <a href="https://www.linkedin.com/in/dimp-sesap-bpm-88053a358" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-outline"><i class="fa-brands fa-linkedin-in"></i>
+                            Perfil no LinkedIn</a>
+                        <a href="https://www.instagram.com/heiiufrn/?hl=en" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline"><i class="fa-brands fa-instagram"></i> Instagram HEII / UFRN</a>
+                    </div>
+                </div>
             </div>
-            <p class="footer-text">&copy; 2025 Projeto BPM SESAP/RN. Todos os direitos reservados.</p>
+
+        </div>
+    </section>
+
+    <!-- RODAPÉ INSTITUCIONAL -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand-col">
+                <div class="footer-logo-row">
+                    <img src="images/logo-projeto.png" alt="Logo Projeto BPM" class="footer-logo">
+                    <div>
+                        <h4 class="footer-brand-title">Projeto BPM SESAP/RN</h4>
+                        <p class="footer-brand-desc">Gestão por Processos e Modernização da Saúde Pública</p>
+                    </div>
+                </div>
+                <p class="footer-summary">Desenvolvimento e Implantação de Ferramentas BPM para modernização dos
+                    processos de gestão nos níveis estratégico, tático e operacional da Secretaria de Estado da Saúde
+                    Pública do Rio Grande do Norte, em parceria com a Universidade Federal do Rio Grande do Norte.</p>
+                <div class="footer-social-links">
+                    <a href="https://www.instagram.com/heiiufrn/?hl=en" target="_blank" rel="noopener noreferrer"
+                        title="Instagram HEII UFRN"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/dimp-sesap-bpm-88053a358" target="_blank"
+                        rel="noopener noreferrer" title="LinkedIn DIMP SESAP"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-heading">Acessos Rápidos</h4>
+                <ul class="footer-nav">
+                    <li><a href="#repositorio"><i class="fa-solid fa-chevron-right"></i> Repositório de Processos</a>
+                    </li>
+                    <li><a href="#gestao-processos"><i class="fa-solid fa-chevron-right"></i> Gestão por Processos</a>
+                    </li>
+                    <li><a href="#indicadores"><i class="fa-solid fa-chevron-right"></i> Painel de Indicadores</a></li>
+                    <li><a href="#relatorios"><i class="fa-solid fa-chevron-right"></i> Relatórios Técnicos</a></li>
+                    <li><a href="#projetos-realizados"><i class="fa-solid fa-chevron-right"></i> Projetos Realizados pelo DIMP</a>
+                    </li>
+                    <li><a href="#equipe"><i class="fa-solid fa-chevron-right"></i> Nossa Equipe</a></li>
+                    <li><a href="#contato"><i class="fa-solid fa-chevron-right"></i> Contatar Equipe Técnica</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-institucional-col">
+                <h4 class="footer-heading">Instituições Realizadoras</h4>
+                <ul class="footer-nav">
+                    <li><i class="fa-solid fa-building-columns"></i> <strong>UFRN:</strong> Universidade Federal do Rio
+                        Grande do Norte</li>
+                    <li><i class="fa-solid fa-gear"></i> <strong>DEP:</strong> Departamento de Engenharia de Produção
+                    </li>
+                    <li><i class="fa-solid fa-flask-vial"></i> <strong>HEII:</strong> Grupo de Pesquisa em Engenharia e
+                        Inovação</li>
+                    <li><i class="fa-solid fa-hospital"></i> <strong>SESAP/RN:</strong> Secretaria de Estado da Saúde
+                        Pública</li>
+                </ul>
+                <div class="footer-meta-note">
+                    <p><i class="fa-solid fa-shield-halved"></i> Portal institucional com dados processuais públicos
+                        para transparência e modernização administrativa.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2024-2026 Projeto BPM SESAP/RN · Todos os direitos reservados.</p>
+                <p class="footer-update-tag">Última atualização: Novembro de 2024 · Versão 2.7</p>
+            </div>
         </div>
     </footer>
+
+    <!-- MODAL INDIVIDUAL SIMPLIFICADO DO PROCESSO (COM APENAS UM LINK "ACESSAR FLUXOGRAMA") -->
+    <div class="modal-backdrop hidden" id="process-modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal-dialog compact-modal">
+            <div class="modal-header">
+                <div class="modal-title-area">
+                    <div class="modal-tags-row">
+                        <span class="modal-code" id="modal-process-code">COM-001</span>
+                        <span class="modal-front-badge" id="modal-process-front">Compras</span>
+                        <span class="modal-status-badge" id="modal-process-status">Validado</span>
+                    </div>
+                    <h2 class="modal-process-name" id="modal-process-name">Nome do Processo</h2>
+                    <div class="modal-unit" id="modal-process-unit"><i class="fa-solid fa-building"></i> Unidade
+                        Administrativa</div>
+                </div>
+                <button class="modal-close-btn" id="modal-close-btn" aria-label="Fechar Modal">&times;</button>
+            </div>
+
+            <div class="modal-body compact-modal-body">
+                <!-- 1. Descrição e Escopo do Processo -->
+                <div class="modal-info-card">
+                    <h3 class="modal-section-subtitle"><i class="fa-solid fa-align-left"></i> Descrição e Escopo do
+                        Processo</h3>
+                    <p id="modal-process-desc" class="modal-text">Descrição objetiva do processo...</p>
+                    <p id="modal-process-escopo" class="modal-text text-muted" style="margin-top: 0.5rem;"></p>
+                </div>
+
+                <!-- 2. Objetivo Institucional -->
+                <div class="modal-info-card">
+                    <h3 class="modal-section-subtitle"><i class="fa-solid fa-bullseye"></i> Objetivo Institucional</h3>
+                    <p id="modal-process-objective" class="modal-text">Objetivo institucional do processo...</p>
+                </div>
+
+                <!-- 3. Caixas de Destaque Lado a Lado: Fluxograma e Base de Conhecimento -->
+                <div class="modal-action-boxes">
+                    <!-- Caixa 1: Fluxograma do Processo (Somente UM link de "Acessar Fluxograma") -->
+                    <div class="modal-action-box box-flowchart">
+                        <div class="box-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                        <div class="box-content">
+                            <h3 class="box-title">Fluxograma do Processo</h3>
+                            <p class="box-desc">Consulte a representação gráfica das atividades, etapas e
+                                responsabilidades do processo.</p>
+                            <div class="box-buttons-row" id="modal-flow-buttons">
+                                <!-- Somente UM botão "Acessar Fluxograma" injetado via JS -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Caixa 2: Base de Conhecimento -->
+                    <div class="modal-action-box box-knowledge">
+                        <div class="box-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+                        <div class="box-content">
+                            <h3 class="box-title">Base de Conhecimento</h3>
+                            <p class="box-desc">Consulte a documentação completa do processo, incluindo atividades,
+                                responsabilidades, procedimentos, indicadores, riscos e controles internos.</p>
+                            <div class="box-buttons-row" id="modal-doc-buttons">
+                                <!-- Botão de Documento Completo injetado via JS -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Base Normativa e Legal -->
+                <div class="modal-info-card">
+                    <h3 class="modal-section-subtitle"><i class="fa-solid fa-scale-balanced"></i> Base Normativa e Legal
+                    </h3>
+                    <p id="modal-process-norma" class="modal-text">Normas, leis e decretos relacionados...</p>
+                </div>
+
+                <!-- 5. Situação de Validação -->
+                <div class="modal-status-footer-row">
+                    <span class="status-footer-label">Situação de Validação:</span>
+                    <span class="status-pill" id="modal-status-footer-pill">Validado</span>
+                    <span class="text-muted" id="modal-version-tag"
+                        style="font-size: 0.85rem; margin-left: auto;"></span>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-outline" id="modal-footer-close">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/dados-portal.js"></script>
     <script src="js/script.js"></script>
-    <script>
-        function showTab(tabId) {
-            // Esconder todos os grids de processos
-            document.getElementById('as-is').style.display = 'none';
-            document.getElementById('to-be').style.display = 'none';
-
-            // Mostrar o grid selecionado
-            const activeGrid = document.getElementById(tabId);
-            activeGrid.style.display = 'grid';
-            activeGrid.querySelectorAll('.process-card').forEach(function (card) {
-                card.classList.add('animate-in');
-            });
-
-            // Atualizar as classes ativas nos botões das abas
-            const tabs = document.getElementsByClassName('process-tab');
-            for (let i = 0; i < tabs.length; i++) {
-                tabs[i].classList.remove('active');
-            }
-
-            // Encontrar o botão correto para ativar
-            for (let i = 0; i < tabs.length; i++) {
-                if (tabs[i].textContent.toLowerCase().includes(tabId === 'as-is' ? 'as is' : 'to be')) {
-                    tabs[i].classList.add('active');
-                }
-            }
-        }
-
-        // Alternância entre os Dashboards (Streamlit / Power BI)
-        function switchDashboard(type) {
-            const streamView = document.getElementById('view-streamlit');
-            const powerView = document.getElementById('view-powerbi');
-            const notice = document.getElementById('dashboard-notice');
-            const buttons = document.querySelectorAll('.dash-tab-btn');
-
-            if (type === 'streamlit') {
-                streamView.style.display = 'flex';
-                powerView.style.display = 'none';
-                if (notice) notice.style.display = 'flex';
-                if (buttons[0]) buttons[0].classList.add('active');
-                if (buttons[1]) buttons[1].classList.remove('active');
-            } else {
-                streamView.style.display = 'none';
-                powerView.style.display = 'flex';
-                if (notice) notice.style.display = 'none';
-                if (buttons[0]) buttons[0].classList.remove('active');
-                if (buttons[1]) buttons[1].classList.add('active');
-            }
-        }
-
-        // Recarregar iframe do Streamlit
-        function reloadIframe() {
-            const frame = document.getElementById('streamlit-frame');
-            if (frame) {
-                const currentSrc = frame.src;
-                frame.src = 'about:blank';
-                setTimeout(function () {
-                    frame.src = currentSrc;
-                }, 100);
-            }
-        }
-    </script>
-
 </body>
 
 </html>
